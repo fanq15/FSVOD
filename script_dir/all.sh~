@@ -1,0 +1,21 @@
+ID=4
+rm support_feature.pkl
+CUDA_VISIBLE_DEVICES=0,1,2,3 python3 fsod_train_net.py --num-gpus 4 \
+	--config-file configs/fsod/fsod_R_50_C4_1x.yaml 2>&1 | tee log/train_log_$ID.txt
+
+#CUDA_VISIBLE_DEVICES=0,1,2,3 python3 tools/train_net.py --num-gpus 4 \
+#	--config-file configs/fsod/fsod_R_50_C4_1x.yaml \
+#	--eval-only MODEL.WEIGHTS ./output/model_final.pth 2>&1 | tee log/test_log_$ID.txt
+
+rm support_feature.pkl
+#CUDA_VISIBLE_DEVICES=0,1,2,3 python3 train_net.py --num-gpus 4 \
+#	--config-file configs/fsod/finetune_fsod_R_50_C4_1x.yaml 2>&1 | tee log/finetune_train_log_$ID.txt
+
+CUDA_VISIBLE_DEVICES=0,1,2,3 python3 fsod_train_net.py --num-gpus 4 \
+	--config-file configs/fsod/finetune_fsod_R_50_C4_1x.yaml \
+	--eval-only MODEL.WEIGHTS ./output/finetune_dir/model_final.pth 2>&1 | tee log/finetune_test_log_$ID.txt
+
+CUDA_VISIBLE_DEVICES=0,1,2,3 python3 fsod_train_net.py --num-gpus 4 \
+	--config-file configs/fsod/finetune_fsod_R_50_C4_1x.yaml \
+	--eval-only MODEL.WEIGHTS ./output/finetune_dir/model_final.pth 2>&1 | tee log/finetune_test_log_$ID.txt
+

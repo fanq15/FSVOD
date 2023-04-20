@@ -1,0 +1,8 @@
+python3 setup.py build develop
+CUDA_VISIBLE_DEVICES=0 python3 fsod_train_net.py --num-gpus 1 \
+	--config-file configs/tpn/R_50_1x.yaml 2>&1 | tee log/tpn_train_log.txt
+
+#sh test_tpn.sh
+#CUDA_VISIBLE_DEVICES=0 python3 fsod_train_net.py --num-gpus 1 \
+#	--config-file configs/tpn/R_50_1x.yaml \
+#	--eval-only MODEL.WEIGHTS ./output/tpn/R_50_1x/model_final.pth 2>&1 | tee log/tpn_test_log.txt

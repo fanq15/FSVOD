@@ -1,0 +1,7 @@
+# ninja log v5
+4	577	1597999061879217693	/home/fanqi/code/fsvod/22-fsvod/build/temp.linux-x86_64-3.7/home/fanqi/code/fsvod/22-fsvod/fewx/layers/csrc/cuda_version.o	2eba8fee4ff7cd1e
+1	12749	1597999074039120420	/home/fanqi/code/fsvod/22-fsvod/build/temp.linux-x86_64-3.7/home/fanqi/code/fsvod/22-fsvod/fewx/layers/csrc/BezierAlign/BezierAlign_cpu.o	af34f96dab56b198
+3	22589	1597999083886041649	/home/fanqi/code/fsvod/22-fsvod/build/temp.linux-x86_64-3.7/home/fanqi/code/fsvod/22-fsvod/fewx/layers/csrc/ml_nms/ml_nms.o	4b1d72cb5b207e7f
+2	23029	1597999084325038138	/home/fanqi/code/fsvod/22-fsvod/build/temp.linux-x86_64-3.7/home/fanqi/code/fsvod/22-fsvod/fewx/layers/csrc/DefROIAlign/DefROIAlign_cuda.o	751a40b4006d1f6b
+2	23426	1597999084724034946	/home/fanqi/code/fsvod/22-fsvod/build/temp.linux-x86_64-3.7/home/fanqi/code/fsvod/22-fsvod/fewx/layers/csrc/BezierAlign/BezierAlign_cuda.o	8e28e3f94f4895b0
+0	24706	1597999085997024762	/home/fanqi/code/fsvod/22-fsvod/build/temp.linux-x86_64-3.7/home/fanqi/code/fsvod/22-fsvod/fewx/layers/csrc/vision.o	db85ca45c3019054

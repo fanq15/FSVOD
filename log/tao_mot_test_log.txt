@@ -1,0 +1,59 @@
+20:03:20 log.py:  81: Writing log file to output/evaluate.py_Oct23-20-03-20.log
+20:03:22 evaluation.py: 303: Evaluating predictions at path: output/tpn_results.json
+20:03:22 evaluation.py: 304: Using annotations at path: datasets/fsvod/annotations/fsvod_val.json
+[4m[31mERROR[0m 20:03:22 tao.py: 103: Did not merge any categories.
+20:03:22 tao.py:  79: Loading annotations.
+20:03:22 tao.py: 111: Creating index.
+[4m[31mERROR[0m 20:03:22 tao.py: 103: Did not merge any categories.
+[31mWARNING[0m 20:03:22 tao.py: 153: 6 annotations had negative values in coordinates!
+20:03:22 tao.py: 158: Index created.
+20:03:23 results.py:  36: Loading and preparing results.
+[31mWARNING[0m 20:03:23 results.py:  44: Assuming user provided the results in correct format.
+[4m[31mERROR[0m 20:03:23 tao.py: 103: Did not merge any categories.
+20:03:23 tao.py: 111: Creating index.
+[4m[31mERROR[0m 20:03:23 tao.py: 103: Did not merge any categories.
+20:03:23 tao.py: 158: Index created.
+20:03:23 eval.py: 251: Running per video evaluation.
+20:03:23 eval.py: 253: Evaluate annotation type *bbox*
+/opt/conda/lib/python3.7/site-packages/numba/core/ir_utils.py:2031: NumbaPendingDeprecationWarning: 
+Encountered the use of a type that is scheduled for deprecation: type 'reflected list' found for argument 'd' of function 'bb_intersect_union'.
+
+For more information visit http://numba.pydata.org/numba-doc/latest/reference/deprecation.html#deprecation-of-reflection-for-list-and-set-types
+
+File "../../../../../opt/conda/lib/python3.7/site-packages/tao/toolkit/tao/eval.py", line 16:
+@jit
+def bb_intersect_union(d, g):
+^
+
+  warnings.warn(NumbaPendingDeprecationWarning(msg, loc=loc))
+/opt/conda/lib/python3.7/site-packages/numba/core/ir_utils.py:2031: NumbaPendingDeprecationWarning: 
+Encountered the use of a type that is scheduled for deprecation: type 'reflected list' found for argument 'g' of function 'bb_intersect_union'.
+
+For more information visit http://numba.pydata.org/numba-doc/latest/reference/deprecation.html#deprecation-of-reflection-for-list-and-set-types
+
+File "../../../../../opt/conda/lib/python3.7/site-packages/tao/toolkit/tao/eval.py", line 16:
+@jit
+def bb_intersect_union(d, g):
+^
+
+  warnings.warn(NumbaPendingDeprecationWarning(msg, loc=loc))
+20:03:27 eval.py: 447: Accumulating evaluation results.
+20:03:28 eval.py: 693:  Average Precision  (AP) @[ IoU=0.50:0.50 | area=   all | dur=   all | maxDets=300 catIds=all] = 0.758
+20:03:28 eval.py: 693:  Average Precision  (AP) @[ IoU=0.50      | area=   all | dur=   all | maxDets=300 catIds=all] = 0.758
+20:03:28 eval.py: 693:  Average Precision  (AP) @[ IoU=0.75      | area=   all | dur=   all | maxDets=300 catIds=all] = -1.000
+20:03:28 eval.py: 693:  Average Precision  (AP) @[ IoU=0.50:0.50 | area=     s | dur=   all | maxDets=300 catIds=all] = 0.000
+20:03:28 eval.py: 693:  Average Precision  (AP) @[ IoU=0.50:0.50 | area=     m | dur=   all | maxDets=300 catIds=all] = 0.470
+20:03:28 eval.py: 693:  Average Precision  (AP) @[ IoU=0.50:0.50 | area=     l | dur=   all | maxDets=300 catIds=all] = 0.768
+20:03:28 eval.py: 693:  Average Precision  (AP) @[ IoU=0.50:0.50 | area=   all | dur=     s | maxDets=300 catIds=all] = -1.000
+20:03:28 eval.py: 693:  Average Precision  (AP) @[ IoU=0.50:0.50 | area=   all | dur=     m | maxDets=300 catIds=all] = 0.809
+20:03:28 eval.py: 693:  Average Precision  (AP) @[ IoU=0.50:0.50 | area=   all | dur=     l | maxDets=300 catIds=all] = 0.778
+20:03:28 eval.py: 693:  Average Recall     (AR) @[ IoU=0.50:0.50 | area=   all | dur=   all | maxDets=300 catIds=all] = 0.775
+20:03:28 eval.py: 693:  Average Recall     (AR) @[ IoU=0.50:0.50 | area=     s | dur=   all | maxDets=300 catIds=all] = 0.000
+20:03:28 eval.py: 693:  Average Recall     (AR) @[ IoU=0.50:0.50 | area=     m | dur=   all | maxDets=300 catIds=all] = 0.475
+20:03:28 eval.py: 693:  Average Recall     (AR) @[ IoU=0.50:0.50 | area=     l | dur=   all | maxDets=300 catIds=all] = 0.785
+20:03:28 eval.py: 693:  Average Recall     (AR) @[ IoU=0.50:0.50 | area=   all | dur=     s | maxDets=300 catIds=all] = -1.000
+20:03:28 eval.py: 693:  Average Recall     (AR) @[ IoU=0.50:0.50 | area=   all | dur=     m | maxDets=300 catIds=all] = 0.826
+20:03:28 eval.py: 693:  Average Recall     (AR) @[ IoU=0.50:0.50 | area=   all | dur=     l | maxDets=300 catIds=all] = 0.785
+20:03:28 evaluation.py: 457: 
+AP,AP-short,AP-med,AP-long,AR,AR-short,AR-med,AR-long,path
+75.82,-100.00,80.90,77.78,77.52,-100.00,82.56,78.51,output/evaluate.py_Oct23-20-03-20.log

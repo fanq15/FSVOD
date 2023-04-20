@@ -1,0 +1,3 @@
+python demo.py --config-file ../configs/fsvod/R_50_C4_1x.yaml \
+    --input ../datasets/fsvod/images/LaSOT/fox/fox-12_0_LaSOT/img/00000791.jpg \
+    --opt MODEL.WEIGHTS ./output/fsvod/R_50_C4_1x/model_final.pth 

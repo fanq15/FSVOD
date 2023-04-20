@@ -1,0 +1,442 @@
+# Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved
+import argparse
+import glob
+import multiprocessing as mp
+import os
+import time
+import cv2
+import tqdm
+import sys
+
+import atexit
+import bisect
+import multiprocessing as mp
+from collections import deque
+import cv2
+import torch
+
+from detectron2.data import MetadataCatalog
+from detectron2.engine.defaults import DefaultPredictor
+from detectron2.utils.video_visualizer import VideoVisualizer
+from detectron2.utils.visualizer import ColorMode, Visualizer
+#from lib.nms import cython_soft_nms_wrapper
+
+#TODO : this is a temporary expedient
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+#from detectron2.config import get_cfg
+from fewx.config import get_cfg
+from detectron2.data.detection_utils import read_image
+from detectron2.utils.logger import setup_logger
+
+from tao.toolkit.tao import Tao
+import torch
+import os
+
+import detectron2.data.transforms as T
+from detectron2.checkpoint import DetectionCheckpointer
+from detectron2.modeling import build_model
+import numpy as np
+from detectron2.structures import Boxes, Instances, pairwise_iou
+from tao.toolkit.tao import TaoEval
+import json
+import logging
+import torch.nn.functional as F
+import ipdb
+
+def setup_cfg(args):
+    # load config from file and command-line arguments
+    cfg = get_cfg()
+    cfg.merge_from_file(args.config_file)
+    cfg.merge_from_list(args.opts)
+    # Set score_threshold for builtin models
+    cfg.MODEL.RETINANET.SCORE_THRESH_TEST = args.confidence_threshold
+    cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = args.confidence_threshold
+    cfg.MODEL.PANOPTIC_FPN.COMBINE.INSTANCES_CONFIDENCE_THRESH = args.confidence_threshold
+    cfg.freeze()
+    return cfg
+
+def get_parser():
+    parser = argparse.ArgumentParser(description="Detectron2 demo for builtin models")
+    parser.add_argument(
+        "--config-file",
+        default="configs/quick_schedules/mask_rcnn_R_50_FPN_inference_acc_test.yaml",
+        metavar="FILE",
+        help="path to config file",
+    )
+    parser.add_argument("--webcam", action="store_true", help="Take inputs from webcam.")
+    parser.add_argument("--video-input", help="Path to video file.")
+    parser.add_argument(
+        "--input",
+        nargs="+",
+        help="A list of space separated input images; "
+        "or a single glob pattern such as 'directory/*.jpg'",
+    )
+    parser.add_argument("--json-path", help="Path to json file.")
+    parser.add_argument(
+        "--output",
+        help="A file or directory to save output visualizations. "
+        "If not given, will show output in an OpenCV window.",
+    )
+
+    parser.add_argument(
+        "--confidence-threshold",
+        type=float,
+        default=0.05,
+        help="Minimum score for instance predictions to be shown",
+    )
+    parser.add_argument(
+        "--opts",
+        help="Modify config options using the command-line 'KEY VALUE' pairs",
+        default=[],
+        nargs=argparse.REMAINDER,
+    )
+    return parser
+
+class DefaultPredictor:
+    """
+    Create a simple end-to-end predictor with the given config that runs on
+    single device for a single input image.
+    Compared to using the model directly, this class does the following additions:
+    1. Load checkpoint from `cfg.MODEL.WEIGHTS`.
+    2. Always take BGR image as the input and apply conversion defined by `cfg.INPUT.FORMAT`.
+    3. Apply resizing defined by `cfg.INPUT.{MIN,MAX}_SIZE_TEST`.
+    4. Take one input image and produce a single output, instead of a batch.
+    If you'd like to do anything more fancy, please refer to its source code
+    as examples to build and use the model manually.
+    Attributes:
+        metadata (Metadata): the metadata of the underlying dataset, obtained from
+            cfg.DATASETS.TEST.
+    Examples:
+    ::
+        pred = DefaultPredictor(cfg)
+        inputs = cv2.imread("input.jpg")
+        outputs = pred(inputs)
+    """
+
+    def __init__(self, cfg):
+        self.cfg = cfg.clone()  # cfg can be modified by model
+        self.model = build_model(self.cfg)
+        self.model.eval()
+        checkpointer = DetectionCheckpointer(self.model)
+        checkpointer.load(cfg.MODEL.WEIGHTS)
+
+    def __call__(self, query_feat, online_cls, video_id): #, original_image, pair_image, last_feat, last_box):
+        """
+        Args:
+            original_image (np.ndarray): an image of shape (H, W, C) (in BGR order).
+        Returns:
+            predictions (dict):
+                the output of the model for one image only.
+                See :doc:`/tutorials/models` for details about the format.
+        """
+        with torch.no_grad():  # https://github.com/sphinx-doc/sphinx/issues/4258
+            # Apply pre-processing to image.
+            inputs = {"query_feat": query_feat, "online_cls": online_cls, "video_id": video_id, "relation_flag": True}
+            predictions = self.model([inputs])
+            return predictions
+
+if __name__ == "__main__":
+    mp.set_start_method("spawn", force=True)
+    args = get_parser().parse_args()
+    setup_logger(name="fvcore")
+    logger = setup_logger()
+    logger.info("Arguments: " + str(args))
+
+    cfg = setup_cfg(args)
+
+    root_path = 'datasets/fsvod/annotations'
+    tao = Tao(os.path.join(root_path, 'fsvod_val.json'))
+    img_dict = {}
+    for item in tao.load_imgs(None):
+        file_name = os.path.join('datasets/fsvod/images', item['file_name'])
+        file_dir = os.path.join(*file_name.split('/')[:-1])
+        img_id = item['id']
+        if file_dir not in img_dict.keys():
+            img_dict[file_dir] = [file_name + ':' + str(img_id)]
+        else:
+            img_dict[file_dir].append(file_name + ':' + str(img_id))
+           
+    predictor = DefaultPredictor(cfg)
+
+    # sort image 
+    for key, value in img_dict.items():
+        value = sorted(value)
+        img_dict[key] = value
+
+    frame_threshold = 1 #3
+
+    result_ls = []
+    video_cnt = 0
+
+    index_dict = {i: 0 for i in range(80)}
+    gt_cls_num = 0 
+    recall_num = 0
+
+    video_num = 0
+    ratio_ls = []
+    fg_num = 0
+    all_num = 0
+    neg_num = 0
+    full_flag = True
+    all_box_num = 0
+    #real_all_num = 0
+    for key, value in img_dict.items():
+        #video_num += 1
+        #if video_num < 658:
+        #    continue
+        #if 'GOT-10k_Train_002815' not in key:
+        #    continue
+        #if 'TAO' not in key:
+        #    continue
+        video_cnt += 1
+        start_time = time.time()
+        img_dir = key
+        img_paths = value
+        img_num = len(img_paths)
+
+        query_feat_ls = []
+        pred_boxes_ls = []
+        real_boxes_ls = []
+        scores_ls = []
+        id_label_ls = []
+        gt_classes_ls = []
+        video_id_ls = []
+
+        img_id_ls = []
+        match_cls_ls = []
+        for cnt, img_path in enumerate(img_paths):
+            path, img_id = img_path.split(':')
+            feat_name = str(img_id) + '_query_feat.pkl'
+            feat_path = os.path.join('mot_dir', os.path.join(*path.split('/')[:-1]), feat_name)
+
+            # find all gt_classes in the video
+            ann_ids = tao.get_ann_ids(img_ids=[int(img_id)])
+            anns = tao.load_anns(ann_ids)
+            #print(anns)
+            if len(anns) == 0:
+                continue
+
+            curr_cls = []
+            curr_bbox = []
+            for item in anns:
+                #print('gt', item)
+                video_id = item['video_id']
+                category_id = item['category_id']
+                bbox = item['bbox']
+                bbox[2] = bbox[0] + bbox[2]
+                bbox[3] = bbox[1] + bbox[3]
+
+                gt_classes_ls.append(category_id)
+
+                curr_cls.append(category_id)
+                curr_bbox.append(bbox)
+                all_box_num += 1
+
+            if not os.path.exists(feat_path):
+                continue
+
+            query_dict = torch.load(feat_path)
+
+            query_feat = query_dict['query_feat']
+            pred_boxes = query_dict['pred_boxes']
+            real_boxes = query_dict['real_boxes']
+            scores = query_dict['scores']
+            id_label = query_dict['id_label']
+
+            query_feat_ls.append(query_feat)
+            pred_boxes_ls.append(pred_boxes)
+            real_boxes_ls.append(real_boxes)
+            scores_ls.append(scores)
+            id_label_ls.append(id_label)
+            img_id_ls += [img_id for i in range(scores.shape[0])]
+            #print(img_id)
+            
+            curr_cls_num = len(list(set(curr_cls)))
+            gt_cls_num += curr_cls_num
+            #ipdb.set_trace() 
+            if len(real_boxes) > 0: 
+                match_quality_matrix = pairwise_iou(Boxes(torch.Tensor(real_boxes)), Boxes(curr_bbox))
+
+                gt = torch.Tensor(range(match_quality_matrix.shape[1])).unsqueeze(0).repeat(match_quality_matrix.shape[0], 1).view(-1)
+                pred = torch.Tensor(range(match_quality_matrix.shape[0])).unsqueeze(1).repeat(1, match_quality_matrix.shape[1]).view(-1)
+                iou, index = torch.sort(match_quality_matrix.view(-1), descending=True)
+
+                pick_index = iou >= 0.5
+                index = index[pick_index]
+
+                curr_match_cls_ls = [-1 for i in range(len(real_boxes))]
+                used_pred = []
+                used_gt = []
+                if len(index) > 0:
+                    for item in index:
+                        pred_index = int(pred[item])
+                        gt_index = int(gt[item])
+                        if pred_index not in used_pred and gt_index not in used_gt:
+                            curr_match_cls_ls[pred_index] = curr_cls[gt_index]
+                            used_gt.append(gt_index)
+                            used_pred.append(pred_index)
+ 
+                recall_index = []
+                for i, box in enumerate(curr_bbox):
+                    iou, cls_index = torch.sort(match_quality_matrix[:, i], descending=True)
+                    if iou[0] >= 0.5:
+                        #match_cls_ls.append(curr_cls[cls_index[0]])
+                        recall_index.append(cls_index[0])
+                    else:
+                        #match_cls_ls.append(-1)
+                        pass
+
+                video_id_ls += [int(video_id) for i in range(scores.shape[0])]
+
+                # recall
+                recall_index_num = len(list(set(recall_index)))
+
+                recall_num += recall_index_num
+                match_cls_ls += curr_match_cls_ls
+            
+        match_cls_ls = np.array(match_cls_ls)
+        online_cls = list(set(gt_classes_ls))
+        if len(set(video_id_ls)) != 1:
+            print(video_id_ls)
+            continue
+        #assert len(set(video_id_ls)) == 1
+
+        query_feat = torch.cat(query_feat_ls, dim=0)
+        pred_boxes = torch.cat(pred_boxes_ls, dim=0)
+        real_boxes = torch.cat(real_boxes_ls, dim=0)
+        scores = torch.cat(scores_ls, dim=0)
+        id_label = torch.cat(id_label_ls, dim=0)
+
+        final_cls = np.array([-1 for i in range(id_label.shape[0])])
+        final_cls_score = np.array([0.0 for i in range(id_label.shape[0])])
+        #final_cls_score = scores
+        
+        for id_curr in torch.unique(id_label):
+            idxs = id_label == id_curr
+            if sum(idxs) < frame_threshold:
+                continue
+
+            query_feat_curr = query_feat[idxs]
+            pred_boxes_curr = pred_boxes[idxs]
+            scores_curr = scores[idxs]
+            id_label_curr = id_label[idxs]
+            if len(match_cls_ls) > 1:
+                match_cls_curr = match_cls_ls[idxs]
+            else:
+                match_cls_curr = match_cls_ls
+
+            match_index = match_cls_curr != -1
+
+            '''
+            attention = (scores_curr * 1).softmax(0)
+            #print(attention, scores_curr)
+            query_feat_curr = query_feat_curr * attention.unsqueeze(-1).unsqueeze(-1).unsqueeze(-1).expand_as(query_feat_curr)
+            query_feat_curr = query_feat_curr.sum(0, True)
+            '''
+            ''' 
+            cat_feat_avg = F.adaptive_avg_pool2d(query_feat_curr, 1).squeeze(-1).squeeze(-1)
+
+            #ipdb.set_trace()
+            proto_feat = cat_feat_avg.mean(0, True).expand_as(cat_feat_avg)
+
+            sim = F.cosine_similarity(cat_feat_avg, proto_feat) * 3.0
+            pos_attention = sim.softmax(0)
+
+            pos_attention = pos_attention.unsqueeze(-1).unsqueeze(-1).unsqueeze(-1).expand_as(query_feat_curr)
+            query_feat_curr = query_feat_curr * pos_attention
+            query_feat_curr = query_feat_curr.sum(0, True)
+            '''
+            #print(query_feat_curr.shape)
+            
+            if full_flag:
+                query_feat_curr = query_feat_curr.mean(0, True)
+                cls_dict = predictor(query_feat_curr, online_cls, video_id)
+
+                for match_cls in match_cls_curr:
+                    if match_cls == -1:
+                        if len(match_cls_curr) > 1:
+                            neg_num += 1
+                            all_num += 1
+                        continue
+                    else:
+                        new_cls_dict = sorted(cls_dict.items(), key=lambda cls_dict:cls_dict[1], reverse=True)
+                        sorted_cls = [i[0] for i in new_cls_dict]
+                        target_index = sorted_cls.index(match_cls)
+                        index_dict[target_index] += 1
+                        if len(match_cls_curr) > 1:
+                            fg_num += 1
+                            all_num += 1
+
+                gt_cls_flag = False
+                if gt_cls_flag:
+                    if sum(match_index) == 0:
+                        continue
+                    else:
+                        pred_cls = match_cls_curr[match_index][0]
+                        cls_score = 1.0
+                else:
+                    pred_cls = max(cls_dict, key=cls_dict.get)
+                    cls_score = cls_dict[pred_cls].cpu().data.numpy()[0]
+
+                if len(final_cls) > 1:
+                    final_cls[idxs] = pred_cls #* img_pick
+                    final_cls_score[idxs] = cls_score #* img_pick
+                    #print(final_cls_score[idxs])
+                else:
+                    final_cls = np.array([pred_cls])
+                    final_cls_score = np.array([cls_score])
+
+        final_cls_score = final_cls_score * scores.numpy()
+        if full_flag:
+            gt_box_flag = False
+            if gt_box_flag:
+                final_idxs = match_cls_ls != -1
+            else:
+                final_idxs = final_cls_score > 0.05
+
+            final_cls = final_cls[final_idxs]
+            final_cls_score = final_cls_score[final_idxs]
+            final_pred_boxes = pred_boxes[final_idxs]
+            final_real_boxes = real_boxes[final_idxs]
+            final_img_id_ls = np.array(img_id_ls)[final_idxs]
+            final_video_ls = np.array(video_id_ls)[final_idxs]
+            final_track_ls = id_label[final_idxs]
+
+            for cnt, bbox in enumerate(final_real_boxes):
+                bbox[2] = bbox[2] - bbox[0]
+                bbox[3] = bbox[3] - bbox[1]
+                cur_dict = {}
+                cur_dict['image_id'] = int(final_img_id_ls[cnt])
+                cur_dict['category_id'] = int(final_cls[cnt])
+                cur_dict['bbox'] = [int(i) for i in bbox.tolist()]
+                cur_dict['score'] = float(final_cls_score[cnt])
+                cur_dict['track_id'] = int(final_track_ls[cnt])
+                cur_dict['video_id'] = int(final_video_ls[cnt])
+                result_ls.append(cur_dict)
+                #print(cur_dict)
+            print(final_real_boxes.shape[0], len(result_ls), neg_num)
+
+        logger.info(
+            "{}: {} in {:.2f}s".format(
+                str(video_cnt) + ': ' +  img_dir,
+                "detected {} images".format(img_num),
+                time.time() - start_time,
+            )
+        )
+    
+    if full_flag: 
+        new_index_dict = {}
+        total_num = sum(index_dict.values())
+        for key, value in index_dict.items():
+            new_index_dict[key] = value / total_num
+
+        print(index_dict)
+        print(new_index_dict) 
+
+    print("Recall:", recall_num / all_box_num, recall_num, all_box_num)
+    print('FG ratio', fg_num / all_num, fg_num, all_num)
+
+    save_name = './output/final_tpn_results.json'
+    with open(save_name, 'w') as f:
+        json.dump(result_ls, f)

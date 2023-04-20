@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: FewX
+Version: 0.1.0
+Summary: FewX is Qi's research platform for instance-level detection tasks based on Detectron2.
+Home-page: https://github.com/fanq15/FewX
+Author: FAN, Qi
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Provides-Extra: all

@@ -1,0 +1,9 @@
+_BASE_: "Base-TPN.yaml"
+MODEL:
+  #WEIGHTS: "detectron2://ImageNetPretrained/MSRA/R-50.pkl"
+  WEIGHTS: './datasets/pretrained_models/FCOS_MS_R_50_2x.pth'
+  RESNETS:
+    DEPTH: 50
+  ROI_HEADS:
+    IOU_THRESHOLDS: [0.3]
+OUTPUT_DIR: "output/tpn/R_50_1x"

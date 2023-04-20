@@ -1,0 +1,13 @@
+from tidecv import TIDE, datasets
+import os
+
+plot_dir = './plot_fig'
+if not os.path.exists(plot_dir):
+    os.makedirs(plot_dir)
+
+tide = TIDE()
+gt_file = 'datasets/fsvod/annotations/fsvod_val.json'
+pred_file = 'output/Ours.json'
+tide.evaluate(datasets.COCO(gt_file), datasets.COCOResult(pred_file), mode=TIDE.BOX) # Use TIDE.MASK for masks
+tide.summarize()  # Summarize the results as tables in the console
+tide.plot(plot_dir)       # Show a summary figure. Specify a folder and it'll output a png to that folder.

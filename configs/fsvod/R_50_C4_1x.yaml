@@ -1,0 +1,9 @@
+_BASE_: "Base-FSVOD-C4.yaml"
+MODEL:
+  #WEIGHTS: "./output/model_0139999.pth" #"detectron2://ImageNetPretrained/MSRA/R-50.pkl"
+  #WEIGHTS: "detectron2://ImageNetPretrained/MSRA/R-50.pkl"
+  WEIGHTS: "./datasets/pretrained_models/model_final_4ce675.pkl"
+  MASK_ON: False
+  RESNETS:
+    DEPTH: 50
+OUTPUT_DIR: './output/fsvod/R_50_C4_1x'

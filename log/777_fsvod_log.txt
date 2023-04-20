@@ -1,0 +1,1547 @@
+[32m[10/23 21:01:35 detectron2]: [0mArguments: Namespace(confidence_threshold=0.05, config_file='./configs/tpn/R_50_1x_777.yaml', input=None, json_path=None, opts=['MODEL.WEIGHTS', './output/tpn/R_50_1x/model_final.pth'], output=None, video_input=None, webcam=False)
+[10/23 21:01:35] root ERROR: Did not merge any categories.
+[10/23 21:01:35] tao.tao WARNING: 6 annotations had negative values in coordinates!
+[32m[10/23 21:01:44 fvcore.common.checkpoint]: [0mLoading checkpoint from ./output/tpn/R_50_1x/model_final.pth
+8 8 2
+[32m[10/23 21:01:46 detectron2]: [0m1: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003761: detected 7 images in 0.89s
+13 21 8
+[32m[10/23 21:01:47 detectron2]: [0m2: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008342: detected 9 images in 0.89s
+8 29 8
+[32m[10/23 21:01:48 detectron2]: [0m3: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008514: detected 8 images in 0.41s
+28 57 22
+[32m[10/23 21:01:50 detectron2]: [0m4: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003108: detected 11 images in 1.93s
+16 73 25
+[32m[10/23 21:01:51 detectron2]: [0m5: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008184: detected 13 images in 0.86s
+3 76 25
+[32m[10/23 21:01:51 detectron2]: [0m6: datasets/fsvod/images/GOT-10k/GOT-10k_Val_000168: detected 10 images in 0.64s
+33 109 51
+[32m[10/23 21:01:53 detectron2]: [0m7: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005491: detected 17 images in 1.44s
+11 120 54
+[32m[10/23 21:01:53 detectron2]: [0m8: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003792: detected 9 images in 0.57s
+21 141 60
+[32m[10/23 21:01:56 detectron2]: [0m9: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004924: detected 10 images in 2.61s
+9 150 60
+[32m[10/23 21:01:56 detectron2]: [0m10: datasets/fsvod/images/GOT-10k/GOT-10k_Val_000157: detected 9 images in 0.28s
+9 159 60
+[32m[10/23 21:01:57 detectron2]: [0m11: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008513: detected 9 images in 0.43s
+11 170 60
+[32m[10/23 21:01:57 detectron2]: [0m12: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002815: detected 11 images in 0.30s
+20 190 72
+[32m[10/23 21:01:58 detectron2]: [0m13: datasets/fsvod/images/GOT-10k/GOT-10k_Train_007903: detected 8 images in 0.71s
+28 218 92
+[32m[10/23 21:01:59 detectron2]: [0m14: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008345: detected 10 images in 1.81s
+11 229 95
+[32m[10/23 21:02:00 detectron2]: [0m15: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001007: detected 8 images in 0.75s
+16 245 103
+[32m[10/23 21:02:01 detectron2]: [0m16: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003106: detected 10 images in 1.34s
+16 261 105
+[32m[10/23 21:02:03 detectron2]: [0m17: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003905: detected 10 images in 1.98s
+64 325 142
+[32m[10/23 21:02:06 detectron2]: [0m18: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005498: detected 36 images in 2.75s
+9 334 142
+[32m[10/23 21:02:07 detectron2]: [0m19: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008179: detected 9 images in 0.42s
+10 344 142
+[32m[10/23 21:02:07 detectron2]: [0m20: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002215: detected 11 images in 0.75s
+16 360 151
+[32m[10/23 21:02:09 detectron2]: [0m21: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003101: detected 10 images in 1.32s
+14 374 155
+[32m[10/23 21:02:09 detectron2]: [0m22: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003757: detected 11 images in 0.66s
+10 384 155
+[32m[10/23 21:02:10 detectron2]: [0m23: datasets/fsvod/images/GOT-10k/GOT-10k_Val_000166: detected 10 images in 0.48s
+64 448 194
+[32m[10/23 21:02:13 detectron2]: [0m24: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004941: detected 25 images in 3.26s
+24 472 205
+[32m[10/23 21:02:16 detectron2]: [0m25: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000724: detected 10 images in 2.50s
+10 482 205
+[32m[10/23 21:02:16 detectron2]: [0m26: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003531: detected 9 images in 0.42s
+20 502 215
+[32m[10/23 21:02:17 detectron2]: [0m27: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004946: detected 10 images in 0.59s
+12 514 218
+[32m[10/23 21:02:17 detectron2]: [0m28: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000378: detected 10 images in 0.57s
+19 533 226
+[32m[10/23 21:02:19 detectron2]: [0m29: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000723: detected 10 images in 1.92s
+1 534 233
+[32m[10/23 21:02:20 detectron2]: [0m30: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005251: detected 13 images in 0.52s
+15 549 236
+[32m[10/23 21:02:21 detectron2]: [0m31: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000385: detected 9 images in 1.20s
+22 571 243
+[32m[10/23 21:02:22 detectron2]: [0m32: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005851: detected 15 images in 1.55s
+14 585 247
+[32m[10/23 21:02:23 detectron2]: [0m33: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000382: detected 10 images in 0.44s
+15 600 247
+[32m[10/23 21:02:23 detectron2]: [0m34: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004948: detected 15 images in 0.38s
+20 620 256
+[32m[10/23 21:02:25 detectron2]: [0m35: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003100: detected 10 images in 1.74s
+14 634 256
+[32m[10/23 21:02:26 detectron2]: [0m36: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002442: detected 9 images in 1.60s
+12 646 257
+[32m[10/23 21:02:27 detectron2]: [0m37: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002214: detected 11 images in 0.61s
+44 690 277
+[32m[10/23 21:02:29 detectron2]: [0m38: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004746: detected 27 images in 2.00s
+13 703 283
+[32m[10/23 21:02:30 detectron2]: [0m39: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003107: detected 10 images in 1.05s
+11 714 283
+[32m[10/23 21:02:32 detectron2]: [0m40: datasets/fsvod/images/GOT-10k/GOT-10k_Val_000160: detected 9 images in 1.64s
+73 787 331
+[32m[10/23 21:02:35 detectron2]: [0m41: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005499: detected 27 images in 2.94s
+19 806 338
+[32m[10/23 21:02:36 detectron2]: [0m42: datasets/fsvod/images/GOT-10k/GOT-10k_Train_007101: detected 10 images in 1.54s
+23 829 350
+[32m[10/23 21:02:39 detectron2]: [0m43: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003793: detected 12 images in 2.29s
+10 839 350
+[32m[10/23 21:02:40 detectron2]: [0m44: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008512: detected 9 images in 1.65s
+10 849 350
+[32m[10/23 21:02:40 detectron2]: [0m45: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008176: detected 10 images in 0.33s
+9 858 350
+[32m[10/23 21:02:41 detectron2]: [0m46: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003758: detected 9 images in 0.31s
+11 869 350
+[32m[10/23 21:02:42 detectron2]: [0m47: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008182: detected 8 images in 0.76s
+14 883 352
+[32m[10/23 21:02:42 detectron2]: [0m48: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003109: detected 10 images in 0.89s
+13 896 356
+[32m[10/23 21:02:43 detectron2]: [0m49: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008185: detected 11 images in 0.77s
+14 910 356
+[32m[10/23 21:02:46 detectron2]: [0m50: datasets/fsvod/images/GOT-10k/GOT-10k_Train_009265: detected 12 images in 2.61s
+12 922 357
+[32m[10/23 21:02:47 detectron2]: [0m51: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008343: detected 9 images in 1.08s
+16 938 361
+[32m[10/23 21:02:49 detectron2]: [0m52: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008515: detected 9 images in 1.92s
+29 967 366
+[32m[10/23 21:02:51 detectron2]: [0m53: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005850: detected 25 images in 1.68s
+6 973 371
+[32m[10/23 21:02:51 detectron2]: [0m54: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000383: detected 9 images in 0.21s
+10 983 371
+[32m[10/23 21:02:51 detectron2]: [0m55: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002840: detected 10 images in 0.28s
+14 997 373
+[32m[10/23 21:02:54 detectron2]: [0m56: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000384: detected 10 images in 2.55s
+9 1006 373
+[32m[10/23 21:02:54 detectron2]: [0m57: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000379: detected 9 images in 0.73s
+26 1032 386
+[32m[10/23 21:02:55 detectron2]: [0m58: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004947: detected 13 images in 0.63s
+26 1058 402
+[32m[10/23 21:02:56 detectron2]: [0m59: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002849: detected 10 images in 0.59s
+10 1068 410
+[32m[10/23 21:02:56 detectron2]: [0m60: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005250: detected 9 images in 0.18s
+19 1087 421
+[32m[10/23 21:02:57 detectron2]: [0m61: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000722: detected 10 images in 1.61s
+9 1096 421
+[32m[10/23 21:02:58 detectron2]: [0m62: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002411: detected 9 images in 0.26s
+21 1117 446
+[32m[10/23 21:02:59 detectron2]: [0m63: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004940: detected 12 images in 1.83s
+11 1128 446
+[32m[10/23 21:03:00 detectron2]: [0m64: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002429: detected 11 images in 0.44s
+24 1152 458
+[32m[10/23 21:03:01 detectron2]: [0m65: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005091: detected 11 images in 0.89s
+12 1164 458
+[32m[10/23 21:03:01 detectron2]: [0m66: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003530: detected 10 images in 0.59s
+10 1174 458
+[32m[10/23 21:03:02 detectron2]: [0m67: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000725: detected 10 images in 0.28s
+12 1186 460
+[32m[10/23 21:03:02 detectron2]: [0m68: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003442: detected 8 images in 0.73s
+14 1200 467
+[32m[10/23 21:03:04 detectron2]: [0m69: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003489: detected 9 images in 1.64s
+11 1211 467
+[32m[10/23 21:03:05 detectron2]: [0m70: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008405: detected 11 images in 0.59s
+8 1219 467
+[32m[10/23 21:03:06 detectron2]: [0m71: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001588: detected 8 images in 1.14s
+16 1235 471
+[32m[10/23 21:03:07 detectron2]: [0m72: datasets/fsvod/images/GOT-10k/GOT-10k_Val_000079: detected 10 images in 1.19s
+18 1253 473
+[32m[10/23 21:03:09 detectron2]: [0m73: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003445: detected 11 images in 2.08s
+9 1262 473
+[32m[10/23 21:03:09 detectron2]: [0m74: datasets/fsvod/images/GOT-10k/GOT-10k_Train_007011: detected 9 images in 0.27s
+13 1275 473
+[32m[10/23 21:03:10 detectron2]: [0m75: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008402: detected 9 images in 1.20s
+12 1287 475
+[32m[10/23 21:03:11 detectron2]: [0m76: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003473: detected 11 images in 0.44s
+17 1304 481
+[32m[10/23 21:03:12 detectron2]: [0m77: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003487: detected 10 images in 1.38s
+14 1318 487
+[32m[10/23 21:03:16 detectron2]: [0m78: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003814: detected 7 images in 3.77s
+10 1328 501
+[32m[10/23 21:03:17 detectron2]: [0m79: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008606: detected 10 images in 1.44s
+18 1346 509
+[32m[10/23 21:03:19 detectron2]: [0m80: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002932: detected 11 images in 1.59s
+10 1356 509
+[32m[10/23 21:03:20 detectron2]: [0m81: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002935: detected 10 images in 0.65s
+12 1368 520
+[32m[10/23 21:03:20 detectron2]: [0m82: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003813: detected 12 images in 0.52s
+12 1380 522
+[32m[10/23 21:03:21 detectron2]: [0m83: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001778: detected 11 images in 0.65s
+10 1390 522
+[32m[10/23 21:03:21 detectron2]: [0m84: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000860: detected 10 images in 0.43s
+9 1399 522
+[32m[10/23 21:03:22 detectron2]: [0m85: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008493: detected 9 images in 1.04s
+18 1417 528
+[32m[10/23 21:03:24 detectron2]: [0m86: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008800: detected 10 images in 1.51s
+35 1452 547
+[32m[10/23 21:03:27 detectron2]: [0m87: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000407: detected 10 images in 3.43s
+10 1462 547
+[32m[10/23 21:03:28 detectron2]: [0m88: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000097: detected 10 images in 0.28s
+9 1471 547
+[32m[10/23 21:03:28 detectron2]: [0m89: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008494: detected 9 images in 0.27s
+13 1484 549
+[32m[10/23 21:03:31 detectron2]: [0m90: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004857: detected 10 images in 2.91s
+3 1487 553
+[32m[10/23 21:03:32 detectron2]: [0m91: datasets/fsvod/images/GOT-10k/GOT-10k_Train_009310: detected 9 images in 0.97s
+16 1503 564
+[32m[10/23 21:03:34 detectron2]: [0m92: datasets/fsvod/images/GOT-10k/GOT-10k_Train_006969: detected 10 images in 2.39s
+8 1511 564
+[32m[10/23 21:03:36 detectron2]: [0m93: datasets/fsvod/images/GOT-10k/GOT-10k_Train_007087: detected 11 images in 1.56s
+11 1522 564
+[32m[10/23 21:03:36 detectron2]: [0m94: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008807: detected 11 images in 0.30s
+10 1532 564
+[32m[10/23 21:03:37 detectron2]: [0m95: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000858: detected 8 images in 1.46s
+10 1542 564
+[32m[10/23 21:03:40 detectron2]: [0m96: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008209: detected 9 images in 2.40s
+7 1549 564
+[32m[10/23 21:03:40 detectron2]: [0m97: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001977: detected 7 images in 0.41s
+23 1572 575
+[32m[10/23 21:03:43 detectron2]: [0m98: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004861: detected 10 images in 2.72s
+26 1598 584
+[32m[10/23 21:03:48 detectron2]: [0m99: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005349: detected 13 images in 5.15s
+20 1618 593
+[32m[10/23 21:03:49 detectron2]: [0m100: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000851: detected 12 images in 0.62s
+12 1630 595
+[32m[10/23 21:03:51 detectron2]: [0m101: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008831: detected 10 images in 1.79s
+10 1640 597
+[32m[10/23 21:03:51 detectron2]: [0m102: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000436: detected 10 images in 0.58s
+13 1653 605
+[32m[10/23 21:03:53 detectron2]: [0m103: datasets/fsvod/images/GOT-10k/GOT-10k_Train_007421: detected 8 images in 1.86s
+15 1668 613
+[32m[10/23 21:03:54 detectron2]: [0m104: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004866: detected 8 images in 1.47s
+9 1677 613
+[32m[10/23 21:03:55 detectron2]: [0m105: datasets/fsvod/images/GOT-10k/GOT-10k_Train_006967: detected 9 images in 0.56s
+9 1686 613
+[32m[10/23 21:03:56 detectron2]: [0m106: datasets/fsvod/images/GOT-10k/GOT-10k_Train_007089: detected 11 images in 1.03s
+9 1695 613
+[32m[10/23 21:03:57 detectron2]: [0m107: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001970: detected 7 images in 0.54s
+26 1721 622
+[32m[10/23 21:03:59 detectron2]: [0m108: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004859: detected 16 images in 2.59s
+41 1762 634
+[32m[10/23 21:04:00 detectron2]: [0m109: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005544: detected 30 images in 1.30s
+8 1770 634
+[32m[10/23 21:04:01 detectron2]: [0m110: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001587: detected 8 images in 0.25s
+22 1792 635
+[32m[10/23 21:04:02 detectron2]: [0m111: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005771: detected 21 images in 1.64s
+17 1809 641
+[32m[10/23 21:04:03 detectron2]: [0m112: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001573: detected 9 images in 1.04s
+20 1829 650
+[32m[10/23 21:04:05 detectron2]: [0m113: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002933: detected 10 images in 1.67s
+9 1838 652
+[32m[10/23 21:04:07 detectron2]: [0m114: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003815: detected 7 images in 2.42s
+10 1848 652
+[32m[10/23 21:04:09 detectron2]: [0m115: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001783: detected 11 images in 1.50s
+12 1860 661
+[32m[10/23 21:04:10 detectron2]: [0m116: datasets/fsvod/images/GOT-10k/GOT-10k_Val_000078: detected 11 images in 0.70s
+11 1871 661
+[32m[10/23 21:04:10 detectron2]: [0m117: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001777: detected 11 images in 0.31s
+20 1891 667
+[32m[10/23 21:04:11 detectron2]: [0m118: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008403: detected 11 images in 1.37s
+12 1903 669
+[32m[10/23 21:04:12 detectron2]: [0m119: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003443: detected 10 images in 1.06s
+16 1919 675
+[32m[10/23 21:04:14 detectron2]: [0m120: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005324: detected 14 images in 1.71s
+19 1938 683
+[32m[10/23 21:04:15 detectron2]: [0m121: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003488: detected 10 images in 0.89s
+8 1946 683
+[32m[10/23 21:04:16 detectron2]: [0m122: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001589: detected 8 images in 1.03s
+12 1958 685
+[32m[10/23 21:04:17 detectron2]: [0m123: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008404: detected 10 images in 0.59s
+17 1975 700
+[32m[10/23 21:04:19 detectron2]: [0m124: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004867: detected 8 images in 2.01s
+8 1983 701
+[32m[10/23 21:04:19 detectron2]: [0m125: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001971: detected 7 images in 0.41s
+10 1993 704
+[32m[10/23 21:04:20 detectron2]: [0m126: datasets/fsvod/images/GOT-10k/GOT-10k_Train_007088: detected 11 images in 1.17s
+10 2003 704
+[32m[10/23 21:04:21 detectron2]: [0m127: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000857: detected 10 images in 0.73s
+6 2009 718
+[32m[10/23 21:04:22 detectron2]: [0m128: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008206: detected 9 images in 1.10s
+12 2021 723
+[32m[10/23 21:04:24 detectron2]: [0m129: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008808: detected 11 images in 1.67s
+13 2034 726
+[32m[10/23 21:04:27 detectron2]: [0m130: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004858: detected 11 images in 3.01s
+23 2057 740
+[32m[10/23 21:04:30 detectron2]: [0m131: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005370: detected 21 images in 2.87s
+13 2070 749
+[32m[10/23 21:04:31 detectron2]: [0m132: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001976: detected 7 images in 1.22s
+11 2081 752
+[32m[10/23 21:04:34 detectron2]: [0m133: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004860: detected 8 images in 2.94s
+15 2096 762
+[32m[10/23 21:04:35 detectron2]: [0m134: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008830: detected 10 images in 1.45s
+28 2124 781
+[32m[10/23 21:04:37 detectron2]: [0m135: datasets/fsvod/images/GOT-10k/GOT-10k_Train_007420: detected 10 images in 2.10s
+16 2140 785
+[32m[10/23 21:04:41 detectron2]: [0m136: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004856: detected 8 images in 3.98s
+10 2150 785
+[32m[10/23 21:04:42 detectron2]: [0m137: datasets/fsvod/images/GOT-10k/GOT-10k_Train_009311: detected 15 images in 0.90s
+13 2163 791
+[32m[10/23 21:04:43 detectron2]: [0m138: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000401: detected 10 images in 1.04s
+10 2173 791
+[32m[10/23 21:04:45 detectron2]: [0m139: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000859: detected 10 images in 1.36s
+9 2182 791
+[32m[10/23 21:04:45 detectron2]: [0m140: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008208: detected 9 images in 0.27s
+18 2200 804
+[32m[10/23 21:04:46 detectron2]: [0m141: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008806: detected 9 images in 0.88s
+21 2221 828
+[32m[10/23 21:04:48 detectron2]: [0m142: datasets/fsvod/images/GOT-10k/GOT-10k_Train_007086: detected 11 images in 2.64s
+16 2237 831
+[32m[10/23 21:04:49 detectron2]: [0m143: datasets/fsvod/images/GOT-10k/GOT-10k_Train_006968: detected 10 images in 0.88s
+9 2246 831
+[32m[10/23 21:04:50 detectron2]: [0m144: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008492: detected 9 images in 0.89s
+11 2257 831
+[32m[10/23 21:04:51 detectron2]: [0m145: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000861: detected 11 images in 0.59s
+18 2275 836
+[32m[10/23 21:04:52 detectron2]: [0m146: datasets/fsvod/images/GOT-10k/GOT-10k_Train_007081: detected 10 images in 1.47s
+14 2289 846
+[32m[10/23 21:04:53 detectron2]: [0m147: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008801: detected 11 images in 0.52s
+26 2315 875
+[32m[10/23 21:04:55 detectron2]: [0m148: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001166: detected 8 images in 2.63s
+56 2371 897
+[32m[10/23 21:04:57 detectron2]: [0m149: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005390: detected 38 images in 2.11s
+9 2380 899
+[32m[10/23 21:05:00 detectron2]: [0m150: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005364: detected 12 images in 2.20s
+13 2393 902
+[32m[10/23 21:05:01 detectron2]: [0m151: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000424: detected 10 images in 1.49s
+3 2396 903
+[32m[10/23 21:05:02 detectron2]: [0m152: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001192: detected 7 images in 0.50s
+10 2406 903
+[32m[10/23 21:05:02 detectron2]: [0m153: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003058: detected 10 images in 0.31s
+33 2439 921
+[32m[10/23 21:05:04 detectron2]: [0m154: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002942: detected 12 images in 2.02s
+11 2450 921
+[32m[10/23 21:05:04 detectron2]: [0m155: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001195: detected 11 images in 0.31s
+7 2457 923
+[32m[10/23 21:05:06 detectron2]: [0m156: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001161: detected 7 images in 1.81s
+23 2480 927
+[32m[10/23 21:05:08 detectron2]: [0m157: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004880: detected 16 images in 1.91s
+13 2493 930
+[32m[10/23 21:05:08 detectron2]: [0m158: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000415: detected 10 images in 0.29s
+13 2506 940
+[32m[10/23 21:05:09 detectron2]: [0m159: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008812: detected 9 images in 0.20s
+23 2529 947
+[32m[10/23 21:05:11 detectron2]: [0m160: datasets/fsvod/images/GOT-10k/GOT-10k_Train_007092: detected 12 images in 2.61s
+7 2536 947
+[32m[10/23 21:05:12 detectron2]: [0m161: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001533: detected 7 images in 0.39s
+22 2558 959
+[32m[10/23 21:05:13 detectron2]: [0m162: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003056: detected 10 images in 1.65s
+20 2578 966
+[32m[10/23 21:05:15 detectron2]: [0m163: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008223: detected 12 images in 1.81s
+16 2594 970
+[32m[10/23 21:05:17 detectron2]: [0m164: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002973: detected 9 images in 2.07s
+17 2611 978
+[32m[10/23 21:05:19 detectron2]: [0m165: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001168: detected 7 images in 1.74s
+13 2624 978
+[32m[10/23 21:05:21 detectron2]: [0m166: datasets/fsvod/images/GOT-10k/GOT-10k_Train_009305: detected 13 images in 2.42s
+14 2638 981
+[32m[10/23 21:05:22 detectron2]: [0m167: datasets/fsvod/images/GOT-10k/GOT-10k_Train_007253: detected 10 images in 0.90s
+9 2647 981
+[32m[10/23 21:05:23 detectron2]: [0m168: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008815: detected 9 images in 0.42s
+32 2679 988
+[32m[10/23 21:05:24 detectron2]: [0m169: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000412: detected 23 images in 1.06s
+13 2692 989
+[32m[10/23 21:05:25 detectron2]: [0m170: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008224: detected 10 images in 1.19s
+10 2702 989
+[32m[10/23 21:05:25 detectron2]: [0m171: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003806: detected 10 images in 0.28s
+17 2719 996
+[32m[10/23 21:05:27 detectron2]: [0m172: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008426: detected 9 images in 1.63s
+10 2729 1011
+[32m[10/23 21:05:28 detectron2]: [0m173: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008614: detected 6 images in 0.88s
+9 2738 1011
+[32m[10/23 21:05:28 detectron2]: [0m174: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001594: detected 9 images in 0.70s
+12 2750 1015
+[32m[10/23 21:05:30 detectron2]: [0m175: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000446: detected 8 images in 1.96s
+19 2769 1017
+[32m[10/23 21:05:32 detectron2]: [0m176: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002927: detected 11 images in 2.00s
+22 2791 1028
+[32m[10/23 21:05:34 detectron2]: [0m177: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005301: detected 15 images in 2.18s
+27 2818 1044
+[32m[10/23 21:05:36 detectron2]: [0m178: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005557: detected 12 images in 1.52s
+11 2829 1044
+[32m[10/23 21:05:37 detectron2]: [0m179: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000448: detected 10 images in 0.64s
+6 2835 1045
+[32m[10/23 21:05:38 detectron2]: [0m180: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005308: detected 9 images in 1.59s
+18 2853 1045
+[32m[10/23 21:05:39 detectron2]: [0m181: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005561: detected 18 images in 0.73s
+32 2885 1064
+[32m[10/23 21:05:42 detectron2]: [0m182: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005337: detected 18 images in 3.00s
+9 2894 1064
+[32m[10/23 21:05:42 detectron2]: [0m183: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008428: detected 9 images in 0.27s
+9 2903 1064
+[32m[10/23 21:05:43 detectron2]: [0m184: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001551: detected 9 images in 0.72s
+9 2912 1065
+[32m[10/23 21:05:44 detectron2]: [0m185: datasets/fsvod/images/GOT-10k/GOT-10k_Val_000054: detected 12 images in 0.73s
+28 2940 1067
+[32m[10/23 21:05:45 detectron2]: [0m186: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005559: detected 26 images in 0.95s
+12 2952 1067
+[32m[10/23 21:05:45 detectron2]: [0m187: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008410: detected 11 images in 0.67s
+12 2964 1069
+[32m[10/23 21:05:46 detectron2]: [0m188: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008622: detected 9 images in 0.91s
+21 2985 1074
+[32m[10/23 21:05:51 detectron2]: [0m189: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005330: detected 19 images in 5.02s
+0 2985 1074
+[32m[10/23 21:05:51 detectron2]: [0m190: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001790: detected 13 images in 0.32s
+17 3002 1078
+[32m[10/23 21:05:53 detectron2]: [0m191: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002929: detected 11 images in 1.67s
+9 3011 1078
+[32m[10/23 21:05:54 detectron2]: [0m192: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008814: detected 9 images in 0.42s
+12 3023 1080
+[32m[10/23 21:05:54 detectron2]: [0m193: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000413: detected 10 images in 0.59s
+21 3044 1094
+[32m[10/23 21:05:59 detectron2]: [0m194: datasets/fsvod/images/GOT-10k/GOT-10k_Train_007094: detected 10 images in 4.80s
+19 3063 1101
+[32m[10/23 21:06:01 detectron2]: [0m195: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008225: detected 10 images in 1.64s
+9 3072 1101
+[32m[10/23 21:06:01 detectron2]: [0m196: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000880: detected 9 images in 0.72s
+17 3089 1109
+[32m[10/23 21:06:04 detectron2]: [0m197: datasets/fsvod/images/GOT-10k/GOT-10k_Train_007093: detected 12 images in 2.87s
+12 3101 1111
+[32m[10/23 21:06:05 detectron2]: [0m198: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003057: detected 10 images in 0.59s
+11 3112 1112
+[32m[10/23 21:06:05 detectron2]: [0m199: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000414: detected 10 images in 0.43s
+2 3114 1116
+[32m[10/23 21:06:06 detectron2]: [0m200: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001169: detected 7 images in 0.49s
+24 3138 1137
+[32m[10/23 21:06:09 detectron2]: [0m201: datasets/fsvod/images/GOT-10k/GOT-10k_Train_009304: detected 10 images in 3.41s
+22 3160 1150
+[32m[10/23 21:06:12 detectron2]: [0m202: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002972: detected 9 images in 2.67s
+3 3163 1152
+[32m[10/23 21:06:12 detectron2]: [0m203: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001160: detected 7 images in 0.60s
+8 3171 1152
+[32m[10/23 21:06:13 detectron2]: [0m204: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001194: detected 8 images in 0.25s
+13 3184 1154
+[32m[10/23 21:06:14 detectron2]: [0m205: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004881: detected 13 images in 1.08s
+10 3194 1154
+[32m[10/23 21:06:14 detectron2]: [0m206: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002944: detected 10 images in 0.58s
+16 3210 1159
+[32m[10/23 21:06:15 detectron2]: [0m207: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000079: detected 10 images in 1.05s
+14 3224 1160
+[32m[10/23 21:06:16 detectron2]: [0m208: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000425: detected 10 images in 0.76s
+13 3237 1160
+[32m[10/23 21:06:17 detectron2]: [0m209: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003092: detected 9 images in 1.19s
+11 3248 1161
+[32m[10/23 21:06:18 detectron2]: [0m210: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001193: detected 9 images in 1.04s
+33 3281 1174
+[32m[10/23 21:06:20 detectron2]: [0m211: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005391: detected 16 images in 1.57s
+22 3303 1180
+[32m[10/23 21:06:22 detectron2]: [0m212: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002943: detected 11 images in 2.06s
+15 3318 1184
+[32m[10/23 21:06:24 detectron2]: [0m213: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003059: detected 10 images in 1.67s
+8 3326 1192
+[32m[10/23 21:06:24 detectron2]: [0m214: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008623: detected 8 images in 0.19s
+24 3350 1202
+[32m[10/23 21:06:25 detectron2]: [0m215: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002928: detected 11 images in 1.50s
+19 3369 1205
+[32m[10/23 21:06:26 detectron2]: [0m216: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005567: detected 16 images in 0.94s
+12 3381 1207
+[32m[10/23 21:06:27 detectron2]: [0m217: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001557: detected 10 images in 0.88s
+10 3391 1207
+[32m[10/23 21:06:28 detectron2]: [0m218: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008416: detected 10 images in 0.75s
+12 3403 1218
+[32m[10/23 21:06:29 detectron2]: [0m219: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008624: detected 9 images in 0.64s
+10 3413 1218
+[32m[10/23 21:06:30 detectron2]: [0m220: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001550: detected 10 images in 1.20s
+10 3423 1219
+[32m[10/23 21:06:31 detectron2]: [0m221: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001762: detected 9 images in 1.52s
+9 3432 1219
+[32m[10/23 21:06:32 detectron2]: [0m222: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008429: detected 9 images in 0.58s
+10 3442 1219
+[32m[10/23 21:06:32 detectron2]: [0m223: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001559: detected 10 images in 0.44s
+16 3458 1226
+[32m[10/23 21:06:33 detectron2]: [0m224: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001566: detected 9 images in 0.58s
+29 3487 1231
+[32m[10/23 21:06:38 detectron2]: [0m225: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005338: detected 15 images in 4.90s
+15 3502 1234
+[32m[10/23 21:06:40 detectron2]: [0m226: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008427: detected 10 images in 2.03s
+11 3513 1234
+[32m[10/23 21:06:40 detectron2]: [0m227: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003807: detected 11 images in 0.32s
+14 3527 1242
+[32m[10/23 21:06:43 detectron2]: [0m228: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005307: detected 10 images in 2.47s
+10 3537 1243
+[32m[10/23 21:06:44 detectron2]: [0m229: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001595: detected 9 images in 1.56s
+14 3551 1245
+[32m[10/23 21:06:45 detectron2]: [0m230: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000447: detected 10 images in 1.28s
+9 3560 1246
+[32m[10/23 21:06:46 detectron2]: [0m231: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001561: detected 9 images in 0.61s
+10 3570 1246
+[32m[10/23 21:06:46 detectron2]: [0m232: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003236: detected 10 images in 0.33s
+11 3581 1246
+[32m[10/23 21:06:47 detectron2]: [0m233: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003460: detected 9 images in 0.78s
+10 3591 1246
+[32m[10/23 21:06:48 detectron2]: [0m234: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000397: detected 9 images in 0.63s
+20 3611 1255
+[32m[10/23 21:06:51 detectron2]: [0m235: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001413: detected 15 images in 3.57s
+17 3628 1261
+[32m[10/23 21:06:53 detectron2]: [0m236: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000707: detected 10 images in 1.51s
+7 3635 1261
+[32m[10/23 21:06:53 detectron2]: [0m237: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001083: detected 7 images in 0.24s
+8 3643 1261
+[32m[10/23 21:06:53 detectron2]: [0m238: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002434: detected 7 images in 0.40s
+53 3696 1292
+[32m[10/23 21:07:07 detectron2]: [0m239: datasets/fsvod/images/GOT-10k/GOT-10k_Train_009225: detected 28 images in 13.27s
+9 3705 1293
+[32m[10/23 21:07:08 detectron2]: [0m240: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001048: detected 7 images in 1.30s
+41 3746 1312
+[32m[10/23 21:07:13 detectron2]: [0m241: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008767: detected 11 images in 4.51s
+9 3755 1312
+[32m[10/23 21:07:13 detectron2]: [0m242: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002853: detected 10 images in 0.77s
+25 3780 1326
+[32m[10/23 21:07:15 detectron2]: [0m243: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002433: detected 11 images in 1.21s
+34 3814 1333
+[32m[10/23 21:07:17 detectron2]: [0m244: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000364: detected 30 images in 2.23s
+0 3814 1333
+[32m[10/23 21:07:17 detectron2]: [0m245: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001084: detected 7 images in 0.16s
+9 3823 1335
+[32m[10/23 21:07:18 detectron2]: [0m246: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000390: detected 9 images in 0.58s
+13 3836 1335
+[32m[10/23 21:07:19 detectron2]: [0m247: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002854: detected 8 images in 1.35s
+13 3849 1339
+[32m[10/23 21:07:20 detectron2]: [0m248: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004965: detected 9 images in 1.48s
+11 3860 1339
+[32m[10/23 21:07:21 detectron2]: [0m249: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008769: detected 11 images in 0.60s
+26 3886 1352
+[32m[10/23 21:07:22 detectron2]: [0m250: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005244: detected 15 images in 0.63s
+10 3896 1352
+[32m[10/23 21:07:22 detectron2]: [0m251: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000352: detected 9 images in 0.70s
+19 3915 1354
+[32m[10/23 21:07:24 detectron2]: [0m252: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004953: detected 19 images in 1.44s
+11 3926 1361
+[32m[10/23 21:07:24 detectron2]: [0m253: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001079: detected 7 images in 0.72s
+13 3939 1364
+[32m[10/23 21:07:25 detectron2]: [0m254: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000399: detected 10 images in 0.44s
+16 3955 1390
+[32m[10/23 21:07:26 detectron2]: [0m255: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005085: detected 8 images in 0.62s
+9 3964 1391
+[32m[10/23 21:07:26 detectron2]: [0m256: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002402: detected 10 images in 0.55s
+4 3968 1391
+[32m[10/23 21:07:26 detectron2]: [0m257: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005243: detected 14 images in 0.20s
+55 4023 1418
+[32m[10/23 21:07:31 detectron2]: [0m258: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004954: detected 32 images in 5.08s
+10 4033 1418
+[32m[10/23 21:07:32 detectron2]: [0m259: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001218: detected 10 images in 0.43s
+13 4046 1421
+[32m[10/23 21:07:34 detectron2]: [0m260: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002831: detected 9 images in 2.34s
+24 4070 1423
+[32m[10/23 21:07:35 detectron2]: [0m261: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005826: detected 24 images in 0.91s
+14 4084 1425
+[32m[10/23 21:07:36 detectron2]: [0m262: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003789: detected 11 images in 1.04s
+55 4139 1437
+[32m[10/23 21:07:38 detectron2]: [0m263: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004755: detected 41 images in 1.46s
+9 4148 1437
+[32m[10/23 21:07:38 detectron2]: [0m264: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005819: detected 9 images in 0.57s
+13 4161 1442
+[32m[10/23 21:07:39 detectron2]: [0m265: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008508: detected 8 images in 1.31s
+40 4201 1459
+[32m[10/23 21:07:43 detectron2]: [0m266: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005821: detected 24 images in 3.56s
+56 4257 1492
+[32m[10/23 21:07:48 detectron2]: [0m267: datasets/fsvod/images/GOT-10k/GOT-10k_Train_009240: detected 26 images in 5.34s
+10 4267 1495
+[32m[10/23 21:07:49 detectron2]: [0m268: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003577: detected 7 images in 1.06s
+3 4270 1498
+[32m[10/23 21:07:50 detectron2]: [0m269: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004938: detected 7 images in 0.31s
+8 4278 1498
+[32m[10/23 21:07:50 detectron2]: [0m270: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008506: detected 8 images in 0.72s
+17 4295 1507
+[32m[10/23 21:07:53 detectron2]: [0m271: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004931: detected 16 images in 2.54s
+14 4309 1510
+[32m[10/23 21:07:54 detectron2]: [0m272: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000102: detected 10 images in 0.77s
+24 4333 1511
+[32m[10/23 21:07:54 detectron2]: [0m273: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005828: detected 21 images in 0.76s
+30 4363 1532
+[32m[10/23 21:07:56 detectron2]: [0m274: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003773: detected 13 images in 1.86s
+16 4379 1541
+[32m[10/23 21:07:58 detectron2]: [0m275: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004936: detected 11 images in 1.98s
+9 4388 1541
+[32m[10/23 21:07:59 detectron2]: [0m276: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003579: detected 9 images in 0.72s
+10 4398 1541
+[32m[10/23 21:08:00 detectron2]: [0m277: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008501: detected 9 images in 0.65s
+9 4407 1543
+[32m[10/23 21:08:01 detectron2]: [0m278: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001211: detected 8 images in 1.32s
+55 4462 1562
+[32m[10/23 21:08:03 detectron2]: [0m279: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004763: detected 36 images in 2.31s
+10 4472 1571
+[32m[10/23 21:08:04 detectron2]: [0m280: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003774: detected 7 images in 1.00s
+11 4483 1577
+[32m[10/23 21:08:05 detectron2]: [0m281: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000354: detected 10 images in 0.59s
+19 4502 1581
+[32m[10/23 21:08:06 detectron2]: [0m282: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002403: detected 11 images in 1.09s
+1 4503 1583
+[32m[10/23 21:08:07 detectron2]: [0m283: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005242: detected 8 images in 0.52s
+9 4512 1584
+[32m[10/23 21:08:07 detectron2]: [0m284: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003525: detected 9 images in 0.41s
+27 4539 1600
+[32m[10/23 21:08:11 detectron2]: [0m285: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004955: detected 15 images in 4.35s
+9 4548 1600
+[32m[10/23 21:08:12 detectron2]: [0m286: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003522: detected 8 images in 0.72s
+11 4559 1600
+[32m[10/23 21:08:13 detectron2]: [0m287: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001611: detected 9 images in 1.03s
+1 4560 1600
+[32m[10/23 21:08:13 detectron2]: [0m288: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005245: detected 10 images in 0.18s
+21 4581 1610
+[32m[10/23 21:08:14 detectron2]: [0m289: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000353: detected 10 images in 1.22s
+11 4592 1610
+[32m[10/23 21:08:15 detectron2]: [0m290: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002404: detected 11 images in 1.05s
+29 4621 1610
+[32m[10/23 21:08:18 detectron2]: [0m291: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004952: detected 29 images in 2.75s
+13 4634 1612
+[32m[10/23 21:08:19 detectron2]: [0m292: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000398: detected 10 images in 0.60s
+19 4653 1627
+[32m[10/23 21:08:20 detectron2]: [0m293: datasets/fsvod/images/GOT-10k/GOT-10k_Train_009215: detected 13 images in 1.33s
+12 4665 1633
+[32m[10/23 21:08:21 detectron2]: [0m294: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000391: detected 10 images in 0.90s
+39 4704 1644
+[32m[10/23 21:08:23 detectron2]: [0m295: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000365: detected 24 images in 2.31s
+18 4722 1648
+[32m[10/23 21:08:25 detectron2]: [0m296: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000701: detected 10 images in 1.83s
+22 4744 1657
+[32m[10/23 21:08:28 detectron2]: [0m297: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004964: detected 9 images in 2.41s
+14 4758 1657
+[32m[10/23 21:08:29 detectron2]: [0m298: datasets/fsvod/images/GOT-10k/GOT-10k_Val_000117: detected 11 images in 1.22s
+9 4767 1657
+[32m[10/23 21:08:30 detectron2]: [0m299: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001618: detected 9 images in 0.72s
+29 4796 1676
+[32m[10/23 21:08:31 detectron2]: [0m300: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008761: detected 11 images in 1.18s
+10 4806 1679
+[32m[10/23 21:08:31 detectron2]: [0m301: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002855: detected 10 images in 0.25s
+16 4822 1681
+[32m[10/23 21:08:33 detectron2]: [0m302: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000706: detected 10 images in 1.64s
+11 4833 1683
+[32m[10/23 21:08:33 detectron2]: [0m303: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000362: detected 9 images in 0.42s
+16 4849 1690
+[32m[10/23 21:08:34 detectron2]: [0m304: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001082: detected 7 images in 1.18s
+6 4855 1692
+[32m[10/23 21:08:36 detectron2]: [0m305: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001412: detected 7 images in 2.00s
+9 4864 1693
+[32m[10/23 21:08:37 detectron2]: [0m306: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001620: detected 9 images in 1.00s
+23 4887 1706
+[32m[10/23 21:08:38 detectron2]: [0m307: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002852: detected 11 images in 0.46s
+14 4901 1710
+[32m[10/23 21:08:39 detectron2]: [0m308: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008766: detected 11 images in 0.92s
+16 4917 1717
+[32m[10/23 21:08:41 detectron2]: [0m309: datasets/fsvod/images/GOT-10k/GOT-10k_Train_009224: detected 16 images in 1.96s
+20 4937 1736
+[32m[10/23 21:08:42 detectron2]: [0m310: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002806: detected 10 images in 1.53s
+15 4952 1750
+[32m[10/23 21:08:43 detectron2]: [0m311: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004937: detected 8 images in 1.38s
+12 4964 1752
+[32m[10/23 21:08:45 detectron2]: [0m312: datasets/fsvod/images/GOT-10k/GOT-10k_Val_000144: detected 9 images in 1.35s
+10 4974 1752
+[32m[10/23 21:08:45 detectron2]: [0m313: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003578: detected 10 images in 0.28s
+18 4992 1756
+[32m[10/23 21:08:46 detectron2]: [0m314: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003775: detected 12 images in 1.36s
+9 5001 1756
+[32m[10/23 21:08:47 detectron2]: [0m315: datasets/fsvod/images/GOT-10k/GOT-10k_Val_000143: detected 9 images in 0.27s
+26 5027 1759
+[32m[10/23 21:08:52 detectron2]: [0m316: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004930: detected 20 images in 5.33s
+16 5043 1765
+[32m[10/23 21:08:53 detectron2]: [0m317: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008507: detected 8 images in 1.16s
+10 5053 1765
+[32m[10/23 21:08:54 detectron2]: [0m318: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001217: detected 10 images in 0.45s
+61 5114 1782
+[32m[10/23 21:08:57 detectron2]: [0m319: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005829: detected 46 images in 3.04s
+29 5143 1793
+[32m[10/23 21:08:59 detectron2]: [0m320: datasets/fsvod/images/GOT-10k/GOT-10k_Train_009241: detected 18 images in 2.22s
+9 5152 1793
+[32m[10/23 21:08:59 detectron2]: [0m321: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005820: detected 9 images in 0.27s
+19 5171 1805
+[32m[10/23 21:09:00 detectron2]: [0m322: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004939: detected 16 images in 1.32s
+33 5204 1809
+[32m[10/23 21:09:04 detectron2]: [0m323: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005827: detected 25 images in 3.17s
+14 5218 1833
+[32m[10/23 21:09:06 detectron2]: [0m324: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002830: detected 10 images in 2.17s
+10 5228 1833
+[32m[10/23 21:09:07 detectron2]: [0m325: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001219: detected 10 images in 0.73s
+11 5239 1834
+[32m[10/23 21:09:08 detectron2]: [0m326: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008509: detected 9 images in 1.02s
+8 5247 1842
+[32m[10/23 21:09:08 detectron2]: [0m327: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005252: detected 10 images in 0.16s
+14 5261 1845
+[32m[10/23 21:09:09 detectron2]: [0m328: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000388: detected 10 images in 0.90s
+10 5271 1845
+[32m[10/23 21:09:09 detectron2]: [0m329: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000343: detected 10 images in 0.45s
+11 5282 1845
+[32m[10/23 21:09:11 detectron2]: [0m330: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000727: detected 11 images in 1.60s
+12 5294 1852
+[32m[10/23 21:09:11 detectron2]: [0m331: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005255: detected 8 images in 0.54s
+105 5399 1916
+[32m[10/23 21:09:14 detectron2]: [0m332: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005093: detected 44 images in 2.89s
+7 5406 1916
+[32m[10/23 21:09:16 detectron2]: [0m333: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001057: detected 7 images in 1.43s
+42 5448 1929
+[32m[10/23 21:09:17 detectron2]: [0m334: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005852: detected 32 images in 1.63s
+15 5463 1933
+[32m[10/23 21:09:18 detectron2]: [0m335: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000375: detected 10 images in 0.58s
+13 5476 1939
+[32m[10/23 21:09:18 detectron2]: [0m336: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000381: detected 10 images in 0.74s
+16 5492 1942
+[32m[10/23 21:09:20 detectron2]: [0m337: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005297: detected 13 images in 1.34s
+25 5517 1944
+[32m[10/23 21:09:21 detectron2]: [0m338: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005855: detected 20 images in 1.31s
+11 5528 1944
+[32m[10/23 21:09:22 detectron2]: [0m339: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000386: detected 10 images in 0.44s
+9 5537 1948
+[32m[10/23 21:09:23 detectron2]: [0m340: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000372: detected 8 images in 1.62s
+76 5613 1994
+[32m[10/23 21:09:26 detectron2]: [0m341: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005492: detected 26 images in 3.28s
+19 5632 2003
+[32m[10/23 21:09:28 detectron2]: [0m342: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003791: detected 9 images in 1.05s
+15 5647 2016
+[32m[10/23 21:09:32 detectron2]: [0m343: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002829: detected 11 images in 4.58s
+17 5664 2022
+[32m[10/23 21:09:34 detectron2]: [0m344: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008510: detected 8 images in 2.22s
+11 5675 2022
+[32m[10/23 21:09:35 detectron2]: [0m345: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002816: detected 11 images in 0.74s
+7 5682 2022
+[32m[10/23 21:09:37 detectron2]: [0m346: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002218: detected 9 images in 1.73s
+11 5693 2022
+[32m[10/23 21:09:38 detectron2]: [0m347: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008346: detected 9 images in 0.72s
+18 5711 2040
+[32m[10/23 21:09:38 detectron2]: [0m348: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005495: detected 18 images in 0.17s
+10 5721 2040
+[32m[10/23 21:09:39 detectron2]: [0m349: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003762: detected 8 images in 0.87s
+16 5737 2046
+[32m[10/23 21:09:39 detectron2]: [0m350: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008341: detected 9 images in 0.91s
+20 5757 2058
+[32m[10/23 21:09:40 detectron2]: [0m351: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002440: detected 8 images in 0.86s
+11 5768 2059
+[32m[10/23 21:09:42 detectron2]: [0m352: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002216: detected 11 images in 1.31s
+12 5780 2067
+[32m[10/23 21:09:42 detectron2]: [0m353: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003102: detected 10 images in 0.65s
+13 5793 2069
+[32m[10/23 21:09:44 detectron2]: [0m354: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004929: detected 10 images in 1.50s
+37 5830 2076
+[32m[10/23 21:09:46 detectron2]: [0m355: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005830: detected 30 images in 1.88s
+16 5846 2078
+[32m[10/23 21:09:46 detectron2]: [0m356: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002827: detected 13 images in 0.62s
+13 5859 2083
+[32m[10/23 21:09:47 detectron2]: [0m357: datasets/fsvod/images/GOT-10k/GOT-10k_Val_000165: detected 11 images in 0.27s
+8 5867 2083
+[32m[10/23 21:09:47 detectron2]: [0m358: datasets/fsvod/images/GOT-10k/GOT-10k_Train_007797: detected 8 images in 0.25s
+18 5885 2094
+[32m[10/23 21:09:48 detectron2]: [0m359: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003105: detected 10 images in 1.02s
+23 5908 2098
+[32m[10/23 21:09:49 detectron2]: [0m360: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005854: detected 19 images in 0.71s
+19 5927 2106
+[32m[10/23 21:09:49 detectron2]: [0m361: datasets/fsvod/images/GOT-10k/GOT-10k_Val_000101: detected 13 images in 0.92s
+11 5938 2106
+[32m[10/23 21:09:50 detectron2]: [0m362: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000373: detected 11 images in 0.45s
+15 5953 2106
+[32m[10/23 21:09:51 detectron2]: [0m363: datasets/fsvod/images/GOT-10k/GOT-10k_Train_007364: detected 14 images in 0.63s
+11 5964 2106
+[32m[10/23 21:09:51 detectron2]: [0m364: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000387: detected 10 images in 0.73s
+60 6024 2124
+[32m[10/23 21:09:55 detectron2]: [0m365: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005853: detected 41 images in 3.73s
+13 6037 2126
+[32m[10/23 21:09:56 detectron2]: [0m366: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008770: detected 10 images in 0.74s
+8 6045 2126
+[32m[10/23 21:09:58 detectron2]: [0m367: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001060: detected 7 images in 2.46s
+11 6056 2128
+[32m[10/23 21:09:59 detectron2]: [0m368: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000380: detected 10 images in 0.77s
+8 6064 2130
+[32m[10/23 21:10:00 detectron2]: [0m369: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000374: detected 7 images in 0.71s
+10 6074 2131
+[32m[10/23 21:10:00 detectron2]: [0m370: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000389: detected 9 images in 0.27s
+12 6086 2131
+[32m[10/23 21:10:01 detectron2]: [0m371: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008574: detected 11 images in 0.76s
+85 6171 2186
+[32m[10/23 21:10:03 detectron2]: [0m372: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005092: detected 34 images in 2.03s
+33 6204 2213
+[32m[10/23 21:10:04 detectron2]: [0m373: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000342: detected 10 images in 0.91s
+15 6219 2230
+[32m[10/23 21:10:04 detectron2]: [0m374: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005254: detected 14 images in 0.37s
+12 6231 2230
+[32m[10/23 21:10:05 detectron2]: [0m375: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008573: detected 8 images in 1.21s
+14 6245 2230
+[32m[10/23 21:10:06 detectron2]: [0m376: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005298: detected 10 images in 1.10s
+12 6257 2231
+[32m[10/23 21:10:07 detectron2]: [0m377: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005253: detected 12 images in 0.35s
+9 6266 2231
+[32m[10/23 21:10:07 detectron2]: [0m378: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002412: detected 9 images in 0.46s
+19 6285 2242
+[32m[10/23 21:10:08 detectron2]: [0m379: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003104: detected 10 images in 0.61s
+9 6294 2242
+[32m[10/23 21:10:08 detectron2]: [0m380: datasets/fsvod/images/GOT-10k/GOT-10k_Train_007796: detected 9 images in 0.62s
+23 6317 2251
+[32m[10/23 21:10:11 detectron2]: [0m381: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004928: detected 10 images in 2.19s
+16 6333 2262
+[32m[10/23 21:10:12 detectron2]: [0m382: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003103: detected 10 images in 0.99s
+11 6344 2263
+[32m[10/23 21:10:12 detectron2]: [0m383: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002441: detected 11 images in 0.81s
+16 6360 2267
+[32m[10/23 21:10:14 detectron2]: [0m384: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002217: detected 13 images in 2.04s
+12 6372 2271
+[32m[10/23 21:10:15 detectron2]: [0m385: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002826: detected 10 images in 0.63s
+63 6435 2308
+[32m[10/23 21:10:17 detectron2]: [0m386: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005494: detected 27 images in 1.58s
+17 6452 2308
+[32m[10/23 21:10:19 detectron2]: [0m387: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003790: detected 11 images in 2.20s
+11 6463 2308
+[32m[10/23 21:10:19 detectron2]: [0m388: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002828: detected 10 images in 0.62s
+94 6557 2366
+[32m[10/23 21:10:26 detectron2]: [0m389: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005493: detected 47 images in 6.25s
+10 6567 2369
+[32m[10/23 21:10:26 detectron2]: [0m390: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008511: detected 9 images in 0.59s
+10 6577 2369
+[32m[10/23 21:10:27 detectron2]: [0m391: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008347: detected 10 images in 0.29s
+11 6588 2369
+[32m[10/23 21:10:27 detectron2]: [0m392: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008181: detected 10 images in 0.58s
+31 6619 2374
+[32m[10/23 21:10:31 detectron2]: [0m393: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004926: detected 15 images in 4.11s
+17 6636 2383
+[32m[10/23 21:10:32 detectron2]: [0m394: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004854: detected 9 images in 1.03s
+14 6650 2386
+[32m[10/23 21:10:34 detectron2]: [0m395: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005388: detected 9 images in 1.32s
+48 6698 2389
+[32m[10/23 21:10:36 detectron2]: [0m396: datasets/fsvod/images/GOT-10k/GOT-10k_Train_009313: detected 38 images in 2.79s
+44 6742 2416
+[32m[10/23 21:10:39 detectron2]: [0m397: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005718: detected 30 images in 2.10s
+15 6757 2418
+[32m[10/23 21:10:41 detectron2]: [0m398: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005343: detected 9 images in 2.17s
+19 6776 2424
+[32m[10/23 21:10:42 detectron2]: [0m399: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000403: detected 10 images in 1.41s
+10 6786 2424
+[32m[10/23 21:10:42 detectron2]: [0m400: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008804: detected 10 images in 0.34s
+38 6824 2424
+[32m[10/23 21:10:43 detectron2]: [0m401: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005727: detected 38 images in 0.99s
+13 6837 2424
+[32m[10/23 21:10:44 detectron2]: [0m402: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000863: detected 13 images in 1.01s
+9 6846 2424
+[32m[10/23 21:10:45 detectron2]: [0m403: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008490: detected 9 images in 0.47s
+48 6894 2439
+[32m[10/23 21:10:49 detectron2]: [0m404: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004853: detected 32 images in 3.82s
+9 6903 2439
+[32m[10/23 21:10:49 detectron2]: [0m405: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008803: detected 9 images in 0.31s
+15 6918 2443
+[32m[10/23 21:10:50 detectron2]: [0m406: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000404: detected 8 images in 1.08s
+12 6930 2445
+[32m[10/23 21:10:51 detectron2]: [0m407: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008204: detected 9 images in 0.93s
+8 6938 2445
+[32m[10/23 21:10:51 detectron2]: [0m408: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002954: detected 8 images in 0.30s
+11 6949 2445
+[32m[10/23 21:10:53 detectron2]: [0m409: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004865: detected 8 images in 1.37s
+7 6956 2445
+[32m[10/23 21:10:54 detectron2]: [0m410: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001973: detected 7 images in 1.38s
+19 6975 2447
+[32m[10/23 21:10:57 detectron2]: [0m411: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005372: detected 16 images in 2.98s
+8 6983 2447
+[32m[10/23 21:10:57 detectron2]: [0m412: datasets/fsvod/images/GOT-10k/GOT-10k_Train_007425: detected 8 images in 0.26s
+12 6995 2450
+[32m[10/23 21:10:58 detectron2]: [0m413: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001974: detected 7 images in 1.00s
+11 7006 2456
+[32m[10/23 21:11:01 detectron2]: [0m414: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004862: detected 7 images in 2.46s
+21 7027 2459
+[32m[10/23 21:11:03 detectron2]: [0m415: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000852: detected 13 images in 2.56s
+10 7037 2459
+[32m[10/23 21:11:04 detectron2]: [0m416: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008832: detected 10 images in 0.28s
+9 7046 2459
+[32m[10/23 21:11:04 detectron2]: [0m417: datasets/fsvod/images/GOT-10k/GOT-10k_Train_007422: detected 9 images in 0.43s
+13 7059 2460
+[32m[10/23 21:11:05 detectron2]: [0m418: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000435: detected 10 images in 0.94s
+12 7071 2461
+[32m[10/23 21:11:06 detectron2]: [0m419: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008401: detected 10 images in 1.07s
+8 7079 2461
+[32m[10/23 21:11:07 detectron2]: [0m420: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000002: detected 7 images in 0.69s
+10 7089 2461
+[32m[10/23 21:11:07 detectron2]: [0m421: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003441: detected 9 images in 0.42s
+15 7104 2471
+[32m[10/23 21:11:07 detectron2]: [0m422: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005774: detected 14 images in 0.25s
+36 7140 2490
+[32m[10/23 21:11:16 detectron2]: [0m423: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005310: detected 41 images in 8.14s
+12 7152 2492
+[32m[10/23 21:11:17 detectron2]: [0m424: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001576: detected 9 images in 1.46s
+7 7159 2494
+[32m[10/23 21:11:19 detectron2]: [0m425: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008602: detected 9 images in 2.20s
+13 7172 2494
+[32m[10/23 21:11:21 detectron2]: [0m426: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002936: detected 10 images in 1.79s
+17 7189 2502
+[32m[10/23 21:11:23 detectron2]: [0m427: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008430: detected 10 images in 1.51s
+16 7205 2507
+[32m[10/23 21:11:23 detectron2]: [0m428: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003810: detected 10 images in 0.90s
+10 7215 2511
+[32m[10/23 21:11:26 detectron2]: [0m429: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005317: detected 13 images in 2.66s
+26 7241 2518
+[32m[10/23 21:11:29 detectron2]: [0m430: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008408: detected 10 images in 3.02s
+25 7266 2527
+[32m[10/23 21:11:30 detectron2]: [0m431: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005773: detected 21 images in 1.13s
+63 7329 2583
+[32m[10/23 21:11:33 detectron2]: [0m432: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003817: detected 23 images in 3.08s
+63 7392 2600
+[32m[10/23 21:11:43 detectron2]: [0m433: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005328: detected 34 images in 9.68s
+11 7403 2602
+[32m[10/23 21:11:44 detectron2]: [0m434: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000853: detected 10 images in 1.11s
+12 7415 2610
+[32m[10/23 21:11:46 detectron2]: [0m435: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001975: detected 7 images in 1.93s
+14 7429 2611
+[32m[10/23 21:11:47 detectron2]: [0m436: datasets/fsvod/images/GOT-10k/GOT-10k_Val_000010: detected 10 images in 0.88s
+27 7456 2624
+[32m[10/23 21:11:50 detectron2]: [0m437: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004863: detected 7 images in 2.85s
+21 7477 2628
+[32m[10/23 21:11:52 detectron2]: [0m438: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000434: detected 17 images in 1.91s
+15 7492 2635
+[32m[10/23 21:11:52 detectron2]: [0m439: datasets/fsvod/images/GOT-10k/GOT-10k_Train_007423: detected 8 images in 0.69s
+8 7500 2640
+[32m[10/23 21:11:53 detectron2]: [0m440: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004864: detected 6 images in 0.95s
+10 7510 2647
+[32m[10/23 21:11:54 detectron2]: [0m441: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001972: detected 7 images in 1.04s
+10 7520 2647
+[32m[10/23 21:11:55 detectron2]: [0m442: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000854: detected 10 images in 0.28s
+10 7530 2647
+[32m[10/23 21:11:55 detectron2]: [0m443: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008205: detected 9 images in 0.58s
+11 7541 2647
+[32m[10/23 21:11:57 detectron2]: [0m444: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002955: detected 9 images in 1.33s
+39 7580 2674
+[32m[10/23 21:12:02 detectron2]: [0m445: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001171: detected 7 images in 5.47s
+16 7596 2687
+[32m[10/23 21:12:03 detectron2]: [0m446: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005373: detected 14 images in 1.25s
+10 7606 2687
+[32m[10/23 21:12:04 detectron2]: [0m447: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008491: detected 9 images in 1.06s
+9 7615 2687
+[32m[10/23 21:12:05 detectron2]: [0m448: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000862: detected 9 images in 0.74s
+11 7626 2698
+[32m[10/23 21:12:05 detectron2]: [0m449: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008802: detected 11 images in 0.33s
+19 7645 2702
+[32m[10/23 21:12:06 detectron2]: [0m450: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005721: detected 14 images in 0.86s
+18 7663 2709
+[32m[10/23 21:12:07 detectron2]: [0m451: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000405: detected 10 images in 0.78s
+10 7673 2709
+[32m[10/23 21:12:08 detectron2]: [0m452: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000865: detected 10 images in 0.75s
+27 7700 2722
+[32m[10/23 21:12:09 detectron2]: [0m453: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005719: detected 16 images in 1.29s
+83 7783 2765
+[32m[10/23 21:12:14 detectron2]: [0m454: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005389: detected 32 images in 4.96s
+14 7797 2770
+[32m[10/23 21:12:15 detectron2]: [0m455: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008496: detected 9 images in 1.17s
+45 7842 2792
+[32m[10/23 21:12:20 detectron2]: [0m456: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004855: detected 21 images in 4.35s
+32 7874 2797
+[32m[10/23 21:12:22 detectron2]: [0m457: datasets/fsvod/images/GOT-10k/GOT-10k_Train_009312: detected 24 images in 2.53s
+12 7886 2802
+[32m[10/23 21:12:22 detectron2]: [0m458: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008805: detected 10 images in 0.28s
+33 7919 2802
+[32m[10/23 21:12:23 detectron2]: [0m459: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005726: detected 33 images in 0.58s
+24 7943 2818
+[32m[10/23 21:12:26 detectron2]: [0m460: datasets/fsvod/images/GOT-10k/GOT-10k_Train_007085: detected 11 images in 3.39s
+13 7956 2820
+[32m[10/23 21:12:27 detectron2]: [0m461: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008409: detected 11 images in 0.84s
+11 7967 2820
+[32m[10/23 21:12:28 detectron2]: [0m462: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001584: detected 8 images in 0.76s
+18 7985 2827
+[32m[10/23 21:12:30 detectron2]: [0m463: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005772: detected 13 images in 1.60s
+11 7996 2827
+[32m[10/23 21:12:31 detectron2]: [0m464: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003485: detected 10 images in 0.94s
+17 8013 2835
+[32m[10/23 21:12:31 detectron2]: [0m465: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001570: detected 9 images in 0.77s
+18 8031 2845
+[32m[10/23 21:12:33 detectron2]: [0m466: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002930: detected 10 images in 1.24s
+68 8099 2892
+[32m[10/23 21:12:36 detectron2]: [0m467: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003816: detected 38 images in 3.68s
+50 8149 2904
+[32m[10/23 21:12:39 detectron2]: [0m468: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005775: detected 36 images in 2.63s
+10 8159 2904
+[32m[10/23 21:12:40 detectron2]: [0m469: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001583: detected 9 images in 0.67s
+13 8172 2906
+[32m[10/23 21:12:41 detectron2]: [0m470: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008431: detected 10 images in 1.10s
+12 8184 2908
+[32m[10/23 21:12:42 detectron2]: [0m471: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002937: detected 11 images in 0.95s
+11 8195 2910
+[32m[10/23 21:12:42 detectron2]: [0m472: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003440: detected 8 images in 0.62s
+20 8215 2924
+[32m[10/23 21:12:45 detectron2]: [0m473: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005327: detected 13 images in 2.66s
+9 8224 2929
+[32m[10/23 21:12:46 detectron2]: [0m474: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001780: detected 10 images in 1.28s
+9 8233 2929
+[32m[10/23 21:12:47 detectron2]: [0m475: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001579: detected 9 images in 0.42s
+23 8256 2933
+[32m[10/23 21:12:50 detectron2]: [0m476: datasets/fsvod/images/GOT-10k/GOT-10k_Val_000092: detected 11 images in 3.17s
+6 8262 2935
+[32m[10/23 21:12:51 detectron2]: [0m477: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001769: detected 11 images in 1.16s
+22 8284 2948
+[32m[10/23 21:12:51 detectron2]: [0m478: datasets/fsvod/images/GOT-10k/GOT-10k_Val_000066: detected 11 images in 0.60s
+13 8297 2955
+[32m[10/23 21:12:53 detectron2]: [0m479: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000442: detected 10 images in 1.15s
+12 8309 2957
+[32m[10/23 21:12:54 detectron2]: [0m480: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005302: detected 9 images in 1.79s
+30 8339 2957
+[32m[10/23 21:12:55 detectron2]: [0m481: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005554: detected 30 images in 0.85s
+12 8351 2957
+[32m[10/23 21:12:56 detectron2]: [0m482: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003465: detected 10 images in 1.20s
+9 8360 2957
+[32m[10/23 21:12:57 detectron2]: [0m483: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003233: detected 9 images in 0.59s
+[]
+9 8369 2957
+[32m[10/23 21:12:58 detectron2]: [0m485: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008617: detected 9 images in 0.57s
+8 8377 2957
+[32m[10/23 21:12:58 detectron2]: [0m486: datasets/fsvod/images/GOT-10k/GOT-10k_Val_000095: detected 8 images in 0.26s
+11 8388 2957
+[32m[10/23 21:12:58 detectron2]: [0m487: datasets/fsvod/images/GOT-10k/GOT-10k_Train_007009: detected 11 images in 0.30s
+12 8400 2961
+[32m[10/23 21:13:00 detectron2]: [0m488: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008273: detected 8 images in 1.62s
+11 8411 2961
+[32m[10/23 21:13:01 detectron2]: [0m489: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003234: detected 9 images in 0.72s
+10 8421 2961
+[32m[10/23 21:13:01 detectron2]: [0m490: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000445: detected 10 images in 0.58s
+13 8434 2967
+[32m[10/23 21:13:02 detectron2]: [0m491: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001767: detected 12 images in 0.44s
+10 8444 2967
+[32m[10/23 21:13:02 detectron2]: [0m492: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001555: detected 9 images in 0.87s
+34 8478 2967
+[32m[10/23 21:13:03 detectron2]: [0m493: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005565: detected 33 images in 0.74s
+11 8489 2970
+[32m[10/23 21:13:04 detectron2]: [0m494: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008414: detected 9 images in 0.85s
+14 8503 2972
+[32m[10/23 21:13:05 detectron2]: [0m495: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008619: detected 9 images in 1.17s
+35 8538 2987
+[32m[10/23 21:13:10 detectron2]: [0m496: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005334: detected 26 images in 5.03s
+8 8546 2987
+[32m[10/23 21:13:10 detectron2]: [0m497: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001196: detected 8 images in 0.25s
+21 8567 2989
+[32m[10/23 21:13:15 detectron2]: [0m498: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005360: detected 12 images in 4.23s
+20 8587 2995
+[32m[10/23 21:13:19 detectron2]: [0m499: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001162: detected 7 images in 4.01s
+10 8597 2995
+[32m[10/23 21:13:19 detectron2]: [0m500: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008216: detected 10 images in 0.28s
+12 8609 3004
+[32m[10/23 21:13:21 detectron2]: [0m501: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001165: detected 7 images in 2.30s
+6 8615 3005
+[32m[10/23 21:13:24 detectron2]: [0m502: datasets/fsvod/images/GOT-10k/GOT-10k_Train_009308: detected 13 images in 2.49s
+19 8634 3012
+[32m[10/23 21:13:25 detectron2]: [0m503: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005367: detected 9 images in 1.46s
+11 8645 3014
+[32m[10/23 21:13:26 detectron2]: [0m504: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001191: detected 7 images in 1.18s
+11 8656 3014
+[32m[10/23 21:13:27 detectron2]: [0m505: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008211: detected 9 images in 0.87s
+17 8673 3017
+[32m[10/23 21:13:29 detectron2]: [0m506: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002941: detected 11 images in 1.66s
+31 8704 3027
+[32m[10/23 21:13:31 detectron2]: [0m507: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000418: detected 24 images in 2.13s
+25 8729 3041
+[32m[10/23 21:13:32 detectron2]: [0m508: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004884: detected 14 images in 0.64s
+28 8757 3051
+[32m[10/23 21:13:33 detectron2]: [0m509: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004879: detected 14 images in 1.55s
+19 8776 3064
+[32m[10/23 21:13:35 detectron2]: [0m510: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000081: detected 11 images in 2.06s
+8 8784 3064
+[32m[10/23 21:13:36 detectron2]: [0m511: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008218: detected 8 images in 0.40s
+41 8825 3091
+[32m[10/23 21:13:38 detectron2]: [0m512: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000411: detected 14 images in 2.75s
+43 8868 3110
+[32m[10/23 21:13:50 detectron2]: [0m513: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005351: detected 17 images in 11.12s
+15 8883 3113
+[32m[10/23 21:13:51 detectron2]: [0m514: datasets/fsvod/images/GOT-10k/GOT-10k_Train_007895: detected 11 images in 1.06s
+11 8894 3116
+[32m[10/23 21:13:51 detectron2]: [0m515: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004846: detected 8 images in 0.41s
+10 8904 3116
+[32m[10/23 21:13:52 detectron2]: [0m516: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001198: detected 10 images in 1.03s
+19 8923 3118
+[32m[10/23 21:13:55 detectron2]: [0m517: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008227: detected 9 images in 2.85s
+15 8938 3122
+[32m[10/23 21:13:58 detectron2]: [0m518: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008829: detected 9 images in 2.84s
+9 8947 3122
+[32m[10/23 21:13:58 detectron2]: [0m519: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000416: detected 9 images in 0.58s
+15 8962 3136
+[32m[10/23 21:13:59 detectron2]: [0m520: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005500: detected 18 images in 0.97s
+11 8973 3136
+[32m[10/23 21:14:00 detectron2]: [0m521: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003055: detected 10 images in 0.43s
+13 8986 3138
+[32m[10/23 21:14:01 detectron2]: [0m522: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002970: detected 10 images in 1.03s
+15 9001 3143
+[32m[10/23 21:14:03 detectron2]: [0m523: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005369: detected 8 images in 1.76s
+11 9012 3144
+[32m[10/23 21:14:04 detectron2]: [0m524: datasets/fsvod/images/GOT-10k/GOT-10k_Val_000032: detected 10 images in 1.06s
+35 9047 3146
+[32m[10/23 21:14:08 detectron2]: [0m525: datasets/fsvod/images/GOT-10k/GOT-10k_Train_009306: detected 31 images in 4.05s
+11 9058 3146
+[32m[10/23 21:14:09 detectron2]: [0m526: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002913: detected 11 images in 1.39s
+10 9068 3146
+[32m[10/23 21:14:10 detectron2]: [0m527: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008415: detected 10 images in 0.82s
+8 9076 3146
+[32m[10/23 21:14:11 detectron2]: [0m528: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001553: detected 8 images in 0.73s
+18 9094 3153
+[32m[10/23 21:14:13 detectron2]: [0m529: datasets/fsvod/images/GOT-10k/GOT-10k_Train_007650: detected 9 images in 2.83s
+15 9109 3159
+[32m[10/23 21:14:14 detectron2]: [0m530: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008618: detected 9 images in 0.88s
+11 9120 3160
+[32m[10/23 21:14:15 detectron2]: [0m531: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008620: detected 9 images in 0.73s
+13 9133 3161
+[32m[10/23 21:14:16 detectron2]: [0m532: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001792: detected 11 images in 0.75s
+8 9141 3161
+[32m[10/23 21:14:17 detectron2]: [0m533: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001554: detected 8 images in 1.02s
+16 9157 3168
+[32m[10/23 21:14:17 detectron2]: [0m534: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001766: detected 9 images in 0.43s
+12 9169 3172
+[32m[10/23 21:14:18 detectron2]: [0m535: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008616: detected 9 images in 0.72s
+11 9180 3172
+[32m[10/23 21:14:19 detectron2]: [0m536: datasets/fsvod/images/GOT-10k/GOT-10k_Train_007008: detected 9 images in 1.50s
+11 9191 3172
+[32m[10/23 21:14:20 detectron2]: [0m537: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003804: detected 9 images in 0.89s
+17 9208 3182
+[32m[10/23 21:14:22 detectron2]: [0m538: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000444: detected 10 images in 1.38s
+30 9238 3205
+[32m[10/23 21:14:24 detectron2]: [0m539: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001596: detected 8 images in 2.21s
+10 9248 3205
+[32m[10/23 21:14:25 detectron2]: [0m540: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001562: detected 8 images in 1.25s
+11 9259 3206
+[32m[10/23 21:14:26 detectron2]: [0m541: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003235: detected 10 images in 0.94s
+15 9274 3208
+[32m[10/23 21:14:28 detectron2]: [0m542: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003463: detected 11 images in 1.44s
+12 9286 3208
+[32m[10/23 21:14:29 detectron2]: [0m543: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001768: detected 11 images in 0.97s
+12 9298 3210
+[32m[10/23 21:14:30 detectron2]: [0m544: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003803: detected 10 images in 1.10s
+22 9320 3228
+[32m[10/23 21:14:31 detectron2]: [0m545: datasets/fsvod/images/GOT-10k/GOT-10k_Val_000093: detected 9 images in 1.19s
+9 9329 3228
+[32m[10/23 21:14:32 detectron2]: [0m546: datasets/fsvod/images/GOT-10k/GOT-10k_Val_000058: detected 7 images in 0.71s
+16 9345 3233
+[32m[10/23 21:14:33 detectron2]: [0m547: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001565: detected 9 images in 1.48s
+24 9369 3245
+[32m[10/23 21:14:35 detectron2]: [0m548: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000443: detected 10 images in 1.95s
+39 9408 3270
+[32m[10/23 21:14:37 detectron2]: [0m549: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003490: detected 11 images in 2.41s
+11 9419 3270
+[32m[10/23 21:14:38 detectron2]: [0m550: datasets/fsvod/images/GOT-10k/GOT-10k_Train_007090: detected 12 images in 0.75s
+12 9431 3270
+[32m[10/23 21:14:39 detectron2]: [0m551: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000417: detected 10 images in 0.58s
+11 9442 3274
+[32m[10/23 21:14:40 detectron2]: [0m552: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005357: detected 8 images in 0.98s
+83 9525 3312
+[32m[10/23 21:14:51 detectron2]: [0m553: datasets/fsvod/images/GOT-10k/GOT-10k_Train_009307: detected 35 images in 11.34s
+15 9540 3317
+[32m[10/23 21:14:53 detectron2]: [0m554: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002971: detected 11 images in 1.93s
+25 9565 3330
+[32m[10/23 21:14:56 detectron2]: [0m555: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005368: detected 11 images in 2.71s
+31 9596 3343
+[32m[10/23 21:14:59 detectron2]: [0m556: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008219: detected 11 images in 3.36s
+66 9662 3406
+[32m[10/23 21:15:01 detectron2]: [0m557: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000410: detected 18 images in 2.14s
+18 9680 3415
+[32m[10/23 21:15:02 detectron2]: [0m558: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004878: detected 8 images in 0.71s
+17 9697 3426
+[32m[10/23 21:15:03 detectron2]: [0m559: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000080: detected 8 images in 1.25s
+10 9707 3432
+[32m[10/23 21:15:05 detectron2]: [0m560: datasets/fsvod/images/GOT-10k/GOT-10k_Train_007097: detected 11 images in 1.61s
+19 9726 3449
+[32m[10/23 21:15:07 detectron2]: [0m561: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008828: detected 11 images in 2.50s
+15 9741 3449
+[32m[10/23 21:15:09 detectron2]: [0m562: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008226: detected 10 images in 2.25s
+15 9756 3451
+[32m[10/23 21:15:12 detectron2]: [0m563: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004847: detected 8 images in 2.40s
+10 9766 3451
+[32m[10/23 21:15:12 detectron2]: [0m564: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003091: detected 10 images in 0.29s
+11 9777 3453
+[32m[10/23 21:15:13 detectron2]: [0m565: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000426: detected 10 images in 1.17s
+8 9785 3453
+[32m[10/23 21:15:14 detectron2]: [0m566: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001190: detected 7 images in 0.58s
+10 9795 3462
+[32m[10/23 21:15:16 detectron2]: [0m567: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001164: detected 9 images in 1.83s
+21 9816 3467
+[32m[10/23 21:15:18 detectron2]: [0m568: datasets/fsvod/images/GOT-10k/GOT-10k_Train_009309: detected 21 images in 1.89s
+11 9827 3468
+[32m[10/23 21:15:18 detectron2]: [0m569: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008210: detected 9 images in 0.73s
+12 9839 3469
+[32m[10/23 21:15:19 detectron2]: [0m570: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000419: detected 10 images in 0.88s
+11 9850 3469
+[32m[10/23 21:15:20 detectron2]: [0m571: datasets/fsvod/images/GOT-10k/GOT-10k_Train_006970: detected 11 images in 0.74s
+23 9873 3480
+[32m[10/23 21:15:22 detectron2]: [0m572: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001197: detected 10 images in 1.49s
+20 9893 3480
+[32m[10/23 21:15:25 detectron2]: [0m573: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008228: detected 10 images in 3.08s
+10 9903 3480
+[32m[10/23 21:15:25 detectron2]: [0m574: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003439: detected 9 images in 0.72s
+9 9912 3480
+[32m[10/23 21:15:26 detectron2]: [0m575: datasets/fsvod/images/GOT-10k/GOT-10k_Train_007099: detected 9 images in 1.01s
+10 9922 3480
+[32m[10/23 21:15:28 detectron2]: [0m576: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008217: detected 8 images in 1.60s
+13 9935 3481
+[32m[10/23 21:15:29 detectron2]: [0m577: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002835: detected 12 images in 1.51s
+45 9980 3506
+[32m[10/23 21:15:30 detectron2]: [0m578: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005822: detected 21 images in 1.03s
+24 10004 3521
+[32m[10/23 21:15:37 detectron2]: [0m579: datasets/fsvod/images/GOT-10k/GOT-10k_Train_009243: detected 36 images in 6.22s
+8 10012 3521
+[32m[10/23 21:15:37 detectron2]: [0m580: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003580: detected 8 images in 0.40s
+12 10024 3521
+[32m[10/23 21:15:38 detectron2]: [0m581: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003110: detected 10 images in 1.34s
+10 10034 3521
+[32m[10/23 21:15:39 detectron2]: [0m582: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008396: detected 10 images in 0.28s
+38 10072 3548
+[32m[10/23 21:15:40 detectron2]: [0m583: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005489: detected 13 images in 1.23s
+27 10099 3557
+[32m[10/23 21:15:41 detectron2]: [0m584: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005825: detected 19 images in 0.86s
+9 10108 3557
+[32m[10/23 21:15:41 detectron2]: [0m585: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002832: detected 11 images in 0.57s
+16 10124 3562
+[32m[10/23 21:15:42 detectron2]: [0m586: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002804: detected 11 images in 0.60s
+13 10137 3564
+[32m[10/23 21:15:44 detectron2]: [0m587: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008502: detected 9 images in 1.62s
+12 10149 3564
+[32m[10/23 21:15:44 detectron2]: [0m588: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003777: detected 11 images in 0.45s
+9 10158 3564
+[32m[10/23 21:15:44 detectron2]: [0m589: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002803: detected 9 images in 0.46s
+12 10170 3566
+[32m[10/23 21:15:46 detectron2]: [0m590: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008505: detected 9 images in 1.15s
+26 10196 3569
+[32m[10/23 21:15:46 detectron2]: [0m591: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004758: detected 22 images in 0.75s
+3 10199 3571
+[32m[10/23 21:15:47 detectron2]: [0m592: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000101: detected 9 images in 0.31s
+12 10211 3571
+[32m[10/23 21:15:47 detectron2]: [0m593: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008398: detected 11 images in 0.45s
+13 10224 3572
+[32m[10/23 21:15:48 detectron2]: [0m594: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002430: detected 11 images in 0.94s
+12 10236 3572
+[32m[10/23 21:15:49 detectron2]: [0m595: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000367: detected 11 images in 0.76s
+9 10245 3572
+[32m[10/23 21:15:50 detectron2]: [0m596: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008763: detected 9 images in 0.87s
+10 10255 3572
+[32m[10/23 21:15:50 detectron2]: [0m597: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000358: detected 10 images in 0.59s
+16 10271 3581
+[32m[10/23 21:15:53 detectron2]: [0m598: datasets/fsvod/images/GOT-10k/GOT-10k_Train_009221: detected 24 images in 3.02s
+17 10288 3589
+[32m[10/23 21:15:55 detectron2]: [0m599: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008797: detected 11 images in 1.20s
+75 10363 3663
+[32m[10/23 21:15:58 detectron2]: [0m600: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005088: detected 14 images in 3.21s
+12 10375 3664
+[32m[10/23 21:15:59 detectron2]: [0m601: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000394: detected 10 images in 1.67s
+11 10386 3664
+[32m[10/23 21:16:00 detectron2]: [0m602: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001848: detected 9 images in 0.88s
+7 10393 3667
+[32m[10/23 21:16:02 detectron2]: [0m603: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001410: detected 7 images in 1.74s
+10 10403 3669
+[32m[10/23 21:16:03 detectron2]: [0m604: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000360: detected 11 images in 1.33s
+14 10417 3674
+[32m[10/23 21:16:05 detectron2]: [0m605: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001080: detected 7 images in 1.18s
+26 10443 3677
+[32m[10/23 21:16:06 detectron2]: [0m606: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004961: detected 21 images in 1.52s
+7 10450 3677
+[32m[10/23 21:16:07 detectron2]: [0m607: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002408: detected 7 images in 0.59s
+10 10460 3688
+[32m[10/23 21:16:07 detectron2]: [0m608: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005249: detected 11 images in 0.76s
+18 10478 3698
+[32m[10/23 21:16:09 detectron2]: [0m609: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008764: detected 9 images in 1.49s
+23 10501 3722
+[32m[10/23 21:16:10 detectron2]: [0m610: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005086: detected 8 images in 0.85s
+12 10513 3725
+[32m[10/23 21:16:11 detectron2]: [0m611: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000356: detected 10 images in 0.95s
+10 10523 3725
+[32m[10/23 21:16:11 detectron2]: [0m612: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002401: detected 10 images in 0.74s
+10 10533 3725
+[32m[10/23 21:16:12 detectron2]: [0m613: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002859: detected 10 images in 0.29s
+43 10576 3744
+[32m[10/23 21:16:17 detectron2]: [0m614: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004957: detected 11 images in 5.18s
+21 10597 3744
+[32m[10/23 21:16:18 detectron2]: [0m615: datasets/fsvod/images/GOT-10k/GOT-10k_Val_000124: detected 19 images in 0.87s
+15 10612 3750
+[32m[10/23 21:16:19 detectron2]: [0m616: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000369: detected 10 images in 0.77s
+23 10635 3752
+[32m[10/23 21:16:20 detectron2]: [0m617: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005849: detected 22 images in 1.20s
+22 10657 3755
+[32m[10/23 21:16:22 detectron2]: [0m618: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002439: detected 13 images in 1.96s
+31 10688 3768
+[32m[10/23 21:16:24 detectron2]: [0m619: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004950: detected 17 images in 2.38s
+4 10692 3768
+[32m[10/23 21:16:25 detectron2]: [0m620: datasets/fsvod/images/GOT-10k/GOT-10k_Train_009217: detected 11 images in 1.26s
+25 10717 3780
+[32m[10/23 21:16:27 detectron2]: [0m621: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004933: detected 12 images in 1.37s
+9 10726 3780
+[32m[10/23 21:16:27 detectron2]: [0m622: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008504: detected 9 images in 0.57s
+23 10749 3792
+[32m[10/23 21:16:28 detectron2]: [0m623: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002805: detected 11 images in 1.05s
+27 10776 3802
+[32m[10/23 21:16:31 detectron2]: [0m624: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004934: detected 18 images in 3.11s
+12 10788 3802
+[32m[10/23 21:16:32 detectron2]: [0m625: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003776: detected 11 images in 0.65s
+23 10811 3816
+[32m[10/23 21:16:34 detectron2]: [0m626: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002833: detected 11 images in 1.68s
+39 10850 3831
+[32m[10/23 21:16:36 detectron2]: [0m627: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005824: detected 26 images in 1.92s
+10 10860 3831
+[32m[10/23 21:16:36 detectron2]: [0m628: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008397: detected 10 images in 0.43s
+33 10893 3849
+[32m[10/23 21:16:38 detectron2]: [0m629: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001814: detected 11 images in 1.97s
+23 10916 3860
+[32m[10/23 21:16:41 detectron2]: [0m630: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003778: detected 12 images in 2.51s
+27 10943 3872
+[32m[10/23 21:16:42 detectron2]: [0m631: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001813: detected 14 images in 1.24s
+39 10982 3875
+[32m[10/23 21:16:46 detectron2]: [0m632: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005823: detected 31 images in 3.71s
+22 11004 3904
+[32m[10/23 21:16:47 detectron2]: [0m633: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002834: detected 13 images in 1.24s
+12 11016 3904
+[32m[10/23 21:16:47 detectron2]: [0m634: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004750: detected 11 images in 0.45s
+8 11024 3904
+[32m[10/23 21:16:48 detectron2]: [0m635: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003581: detected 8 images in 0.87s
+9 11033 3904
+[32m[10/23 21:16:49 detectron2]: [0m636: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003521: detected 8 images in 0.53s
+29 11062 3914
+[32m[10/23 21:16:51 detectron2]: [0m637: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005848: detected 21 images in 2.23s
+34 11096 3950
+[32m[10/23 21:16:53 detectron2]: [0m638: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005246: detected 21 images in 2.53s
+16 11112 3959
+[32m[10/23 21:16:55 detectron2]: [0m639: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004951: detected 7 images in 1.57s
+1 11113 3959
+[32m[10/23 21:16:56 detectron2]: [0m640: datasets/fsvod/images/GOT-10k/GOT-10k_Train_009216: detected 9 images in 0.77s
+20 11133 3966
+[32m[10/23 21:16:57 detectron2]: [0m641: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002438: detected 11 images in 1.70s
+10 11143 3966
+[32m[10/23 21:16:58 detectron2]: [0m642: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000357: detected 10 images in 0.43s
+24 11167 3973
+[32m[10/23 21:16:58 detectron2]: [0m643: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005241: detected 21 images in 0.53s
+15 11182 3980
+[32m[10/23 21:16:59 detectron2]: [0m644: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002858: detected 11 images in 1.06s
+64 11246 4029
+[32m[10/23 21:17:03 detectron2]: [0m645: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005087: detected 20 images in 3.88s
+10 11256 4029
+[32m[10/23 21:17:04 detectron2]: [0m646: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003526: detected 9 images in 0.57s
+11 11267 4037
+[32m[10/23 21:17:05 detectron2]: [0m647: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004956: detected 7 images in 1.30s
+11 11278 4039
+[32m[10/23 21:17:06 detectron2]: [0m648: datasets/fsvod/images/GOT-10k/GOT-10k_Train_001081: detected 7 images in 0.68s
+18 11296 4048
+[32m[10/23 21:17:07 detectron2]: [0m649: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002436: detected 11 images in 1.39s
+21 11317 4052
+[32m[10/23 21:17:10 detectron2]: [0m650: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000361: detected 10 images in 2.26s
+10 11327 4054
+[32m[10/23 21:17:11 detectron2]: [0m651: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008765: detected 8 images in 1.31s
+13 11340 4055
+[32m[10/23 21:17:11 detectron2]: [0m652: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002851: detected 11 images in 0.52s
+30 11370 4071
+[32m[10/23 21:17:12 detectron2]: [0m653: datasets/fsvod/images/GOT-10k/GOT-10k_Val_000113: detected 14 images in 0.72s
+17 11387 4073
+[32m[10/23 21:17:16 detectron2]: [0m654: datasets/fsvod/images/GOT-10k/GOT-10k_Train_004958: detected 9 images in 4.01s
+11 11398 4073
+[32m[10/23 21:17:16 detectron2]: [0m655: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002431: detected 11 images in 0.29s
+13 11411 4080
+[32m[10/23 21:17:19 detectron2]: [0m656: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000702: detected 10 images in 2.16s
+17 11428 4084
+[32m[10/23 21:17:21 detectron2]: [0m657: datasets/fsvod/images/GOT-10k/GOT-10k_Train_003528: detected 8 images in 2.23s
+16 11444 4093
+[32m[10/23 21:17:22 detectron2]: [0m658: datasets/fsvod/images/GOT-10k/GOT-10k_Train_005089: detected 7 images in 0.84s
+8 11452 4093
+[32m[10/23 21:17:22 detectron2]: [0m659: datasets/fsvod/images/GOT-10k/GOT-10k_Train_002856: detected 9 images in 0.42s
+19 11471 4098
+[32m[10/23 21:17:24 detectron2]: [0m660: datasets/fsvod/images/GOT-10k/GOT-10k_Train_008762: detected 11 images in 1.98s
+12 11483 4102
+[32m[10/23 21:17:25 detectron2]: [0m661: datasets/fsvod/images/GOT-10k/GOT-10k_Train_000359: detected 11 images in 0.46s
+35 11518 4132
+[32m[10/23 21:17:32 detectron2]: [0m662: datasets/fsvod/images/TAO/val/HACS/Mooping_floor_v_4PcViMFUHEQ_scene_0_0-5174: detected 40 images in 7.19s
+8 11526 4134
+[32m[10/23 21:17:35 detectron2]: [0m663: datasets/fsvod/images/TAO/val/HACS/Doing_fencing_v_91Wdp_uaWrY_scene_0_0-2161: detected 40 images in 3.65s
+29 11555 4137
+[32m[10/23 21:17:38 detectron2]: [0m664: datasets/fsvod/images/TAO/val/HACS/Camel_ride_v_TH_KGX6wsSY_scene_0_0-1319: detected 40 images in 2.98s
+18 11573 4153
+[32m[10/23 21:17:46 detectron2]: [0m665: datasets/fsvod/images/TAO/val/HACS/Doing_fencing_v_IBB6OkDzGq8_scene_0_0-5790: detected 40 images in 7.43s
+36 11609 4164
+[32m[10/23 21:17:56 detectron2]: [0m666: datasets/fsvod/images/TAO/val/HACS/Mooping_floor_v_f23CmkPr38w_scene_0_19-4664: detected 40 images in 9.86s
+144 11753 4308
+[32m[10/23 21:18:10 detectron2]: [0m667: datasets/fsvod/images/TAO/val/HACS/Knitting_v_vX4bGnJL0uM_scene_0_175-2811: detected 40 images in 14.56s
+59 11812 4355
+[32m[10/23 21:18:21 detectron2]: [0m668: datasets/fsvod/images/TAO/val/HACS/Plastering_v_RfoNQwyqvr8_scene_0_18-5165: detected 40 images in 11.11s
+83 11895 4439
+[32m[10/23 21:18:27 detectron2]: [0m669: datasets/fsvod/images/TAO/val/YFCC100M/v_a8527f6556714827bb5a2cf724562d: detected 40 images in 5.83s
+46 11941 4477
+[32m[10/23 21:18:34 detectron2]: [0m670: datasets/fsvod/images/TAO/val/YFCC100M/v_db5b8c53e4af4b5fdca1177907c56a5: detected 31 images in 6.39s
+17 11958 4508
+[32m[10/23 21:18:43 detectron2]: [0m671: datasets/fsvod/images/TAO/val/AVA/G0gDuIVKiXg_scene_19_51587-52870: detected 40 images in 9.51s
+44 12002 4518
+[32m[10/23 21:18:47 detectron2]: [0m672: datasets/fsvod/images/TAO/val/LaSOT/tank-6: detected 40 images in 4.04s
+80 12082 4557
+[32m[10/23 21:18:48 detectron2]: [0m673: datasets/fsvod/images/TAO/val/LaSOT/airplane-11: detected 40 images in 1.01s
+42 12124 4562
+[32m[10/23 21:18:50 detectron2]: [0m674: datasets/fsvod/images/TAO/val/LaSOT/tank-20: detected 40 images in 1.67s
+13 12137 4576
+[32m[10/23 21:18:53 detectron2]: [0m675: datasets/fsvod/images/TAO/val/LaSOT/tank-8: detected 40 images in 3.12s
+39 12176 4578
+[32m[10/23 21:18:56 detectron2]: [0m676: datasets/fsvod/images/TAO/val/LaSOT/tank-13: detected 40 images in 2.70s
+50 12226 4585
+[32m[10/23 21:18:58 detectron2]: [0m677: datasets/fsvod/images/TAO/val/LaSOT/airplane-3: detected 40 images in 2.64s
+38 12264 4597
+[32m[10/23 21:19:01 detectron2]: [0m678: datasets/fsvod/images/TAO/val/LaSOT/tank-7: detected 40 images in 2.92s
+58 12322 4612
+[32m[10/23 21:19:05 detectron2]: [0m679: datasets/fsvod/images/TAO/val/LaSOT/tank-5: detected 40 images in 3.88s
+135 12457 4680
+[32m[10/23 21:19:09 detectron2]: [0m680: datasets/fsvod/images/TAO/val/LaSOT/gorilla-12: detected 40 images in 3.79s
+24 12481 4733
+[32m[10/23 21:19:14 detectron2]: [0m681: datasets/fsvod/images/TAO/train/YFCC100M/v_5b8014f2ebc4628f33a9dcc2d1fbc3b: detected 35 images in 5.20s
+23 12504 4740
+[32m[10/23 21:19:19 detectron2]: [0m682: datasets/fsvod/images/TAO/train/HACS/Tug_of_war_v_yb7EbSnIAqM_scene_0_0-722: detected 31 images in 5.15s
+31 12535 4787
+[32m[10/23 21:19:25 detectron2]: [0m683: datasets/fsvod/images/TAO/train/HACS/Tai_chi_v_87ksUt7mO3o_scene_0_0-1298: detected 40 images in 6.13s
+39 12574 4864
+[32m[10/23 21:19:31 detectron2]: [0m684: datasets/fsvod/images/TAO/train/HACS/Knitting_v_VTEcwSCLwLg_scene_0_0-5104: detected 40 images in 5.84s
+104 12678 4995
+[32m[10/23 21:19:35 detectron2]: [0m685: datasets/fsvod/images/TAO/train/YFCC100M/v_39e0a6e2fd23c9796a7ac04ed257c461: detected 40 images in 3.64s
+67 12745 5054
+[32m[10/23 21:19:41 detectron2]: [0m686: datasets/fsvod/images/TAO/train/AVA/WKqbLbU68wU_scene_6_24945-26344: detected 40 images in 6.48s
+108 12853 5154
+[32m[10/23 21:19:47 detectron2]: [0m687: datasets/fsvod/images/TAO/train/AVA/WKqbLbU68wU_scene_5_23558-24613: detected 40 images in 5.80s
+74 12927 5226
+[32m[10/23 21:19:56 detectron2]: [0m688: datasets/fsvod/images/TAO/train/AVA/uwW0ejeosmk_scene_3_50442-52200: detected 40 images in 8.94s
+96 13023 5283
+[32m[10/23 21:19:59 detectron2]: [0m689: datasets/fsvod/images/TAO/train/LaSOT/tank-2: detected 40 images in 3.08s
+54 13077 5296
+[32m[10/23 21:20:04 detectron2]: [0m690: datasets/fsvod/images/TAO/train/LaSOT/tiger-13: detected 40 images in 5.02s
+64 13141 5321
+[32m[10/23 21:20:12 detectron2]: [0m691: datasets/fsvod/images/TAO/train/LaSOT/tiger-9: detected 40 images in 7.90s
+84 13225 5335
+[32m[10/23 21:20:16 detectron2]: [0m692: datasets/fsvod/images/TAO/train/LaSOT/tiger-4: detected 40 images in 4.16s
+69 13294 5400
+[32m[10/23 21:20:26 detectron2]: [0m693: datasets/fsvod/images/TAO/train/LaSOT/microphone-3: detected 40 images in 9.74s
+11 13305 5409
+[32m[10/23 21:20:28 detectron2]: [0m694: datasets/fsvod/images/TAO/train/AVA/5BDj0ow5hnA_scene_10_54385-55758: detected 40 images in 2.20s
+60 13365 5483
+[32m[10/23 21:20:35 detectron2]: [0m695: datasets/fsvod/images/TAO/train/LaSOT/guitar-6: detected 40 images in 6.96s
+65 13430 5529
+[32m[10/23 21:20:43 detectron2]: [0m696: datasets/fsvod/images/TAO/train/HACS/Camel_ride_v_owDp3KOHmu8: detected 31 images in 7.97s
+142 13572 5648
+[32m[10/23 21:20:52 detectron2]: [0m697: datasets/fsvod/images/TAO/train/HACS/Knitting_v_mq7Wv-5qJwc: detected 40 images in 8.81s
+17 13589 5652
+[32m[10/23 21:20:56 detectron2]: [0m698: datasets/fsvod/images/TAO/train/LaSOT/bottle-12: detected 40 images in 4.45s
+118 13707 5672
+[32m[10/23 21:21:02 detectron2]: [0m699: datasets/fsvod/images/LaSOT/gorilla/gorilla-6_0_LaSOT/img: detected 96 images in 5.77s
+43 13750 5686
+[32m[10/23 21:21:04 detectron2]: [0m700: datasets/fsvod/images/LaSOT/gorilla/gorilla-10_0_LaSOT/img: detected 33 images in 1.54s
+63 13813 5707
+[32m[10/23 21:21:05 detectron2]: [0m701: datasets/fsvod/images/LaSOT/gorilla/gorilla-19_0_LaSOT/img: detected 44 images in 1.22s
+37 13850 5711
+[32m[10/23 21:21:06 detectron2]: [0m702: datasets/fsvod/images/LaSOT/turtle/turtle-12_0_LaSOT/img: detected 34 images in 0.92s
+35 13885 5711
+[32m[10/23 21:21:08 detectron2]: [0m703: datasets/fsvod/images/LaSOT/turtle/turtle-5_0_LaSOT/img: detected 37 images in 2.32s
+394 14279 5782
+[32m[10/23 21:21:25 detectron2]: [0m704: datasets/fsvod/images/LaSOT/turtle/turtle-10_0_LaSOT/img: detected 333 images in 17.11s
+94 14373 5803
+[32m[10/23 21:21:29 detectron2]: [0m705: datasets/fsvod/images/LaSOT/turtle/turtle-3_0_LaSOT/img: detected 75 images in 4.17s
+282 14655 5868
+[32m[10/23 21:21:43 detectron2]: [0m706: datasets/fsvod/images/LaSOT/turtle/turtle-9_0_LaSOT/img: detected 238 images in 13.77s
+155 14810 5943
+[32m[10/23 21:21:55 detectron2]: [0m707: datasets/fsvod/images/LaSOT/turtle/turtle-1_0_LaSOT/img: detected 78 images in 11.63s
+41 14851 5947
+[32m[10/23 21:21:57 detectron2]: [0m708: datasets/fsvod/images/LaSOT/turtle/turtle-20_0_LaSOT/img: detected 34 images in 2.64s
+58 14909 5947
+[32m[10/23 21:21:58 detectron2]: [0m709: datasets/fsvod/images/LaSOT/hippo/hippo-18_0_LaSOT/img: detected 58 images in 1.09s
+30 14939 5954
+[32m[10/23 21:22:00 detectron2]: [0m710: datasets/fsvod/images/LaSOT/hippo/hippo-7_0_LaSOT/img: detected 24 images in 1.70s
+61 15000 5973
+[32m[10/23 21:22:02 detectron2]: [0m711: datasets/fsvod/images/LaSOT/hippo/hippo-13_0_LaSOT/img: detected 56 images in 1.94s
+91 15091 6028
+[32m[10/23 21:22:08 detectron2]: [0m712: datasets/fsvod/images/LaSOT/hippo/hippo-7_1_LaSOT/img: detected 58 images in 6.21s
+32 15123 6028
+[32m[10/23 21:22:09 detectron2]: [0m713: datasets/fsvod/images/LaSOT/hippo/hippo-20_0_LaSOT/img: detected 32 images in 0.74s
+80 15203 6067
+[32m[10/23 21:22:12 detectron2]: [0m714: datasets/fsvod/images/LaSOT/hippo/hippo-16_0_LaSOT/img: detected 46 images in 3.04s
+40 15243 6067
+[32m[10/23 21:22:14 detectron2]: [0m715: datasets/fsvod/images/LaSOT/hippo/hippo-2_0_LaSOT/img: detected 37 images in 1.87s
+95 15338 6081
+[32m[10/23 21:22:20 detectron2]: [0m716: datasets/fsvod/images/LaSOT/hippo/hippo-14_0_LaSOT/img: detected 74 images in 5.97s
+192 15530 6234
+[32m[10/23 21:22:31 detectron2]: [0m717: datasets/fsvod/images/LaSOT/leopard/leopard-20_0_LaSOT/img: detected 86 images in 11.23s
+97 15627 6254
+[32m[10/23 21:22:35 detectron2]: [0m718: datasets/fsvod/images/LaSOT/leopard/leopard-19_0_LaSOT/img: detected 84 images in 3.84s
+80 15707 6301
+[32m[10/23 21:22:44 detectron2]: [0m719: datasets/fsvod/images/LaSOT/leopard/leopard-1_0_LaSOT/img: detected 37 images in 8.91s
+209 15916 6506
+[32m[10/23 21:22:48 detectron2]: [0m720: datasets/fsvod/images/LaSOT/swing/swing-2_0_LaSOT/img: detected 62 images in 4.52s
+85 16001 6589
+[32m[10/23 21:22:52 detectron2]: [0m721: datasets/fsvod/images/LaSOT/swing/swing-20_0_LaSOT/img: detected 43 images in 3.23s
+60 16061 6619
+[32m[10/23 21:23:05 detectron2]: [0m722: datasets/fsvod/images/LaSOT/swing/swing-8_0_LaSOT/img: detected 62 images in 13.13s
+544 16605 7125
+[32m[10/23 21:23:38 detectron2]: [0m723: datasets/fsvod/images/LaSOT/swing/swing-7_0_LaSOT/img: detected 218 images in 33.09s
+76 16681 7180
+[32m[10/23 21:23:46 detectron2]: [0m724: datasets/fsvod/images/LaSOT/swing/swing-18_0_LaSOT/img: detected 33 images in 8.28s
+58 16739 7180
+[32m[10/23 21:23:48 detectron2]: [0m725: datasets/fsvod/images/LaSOT/boat/boat-17_0_LaSOT/img: detected 59 images in 1.55s
+5 16744 7180
+[32m[10/23 21:23:48 detectron2]: [0m726: datasets/fsvod/images/LaSOT/tiger/tiger-2_0_LaSOT/img: detected 5 images in 0.22s
+54 16798 7182
+[32m[10/23 21:23:51 detectron2]: [0m727: datasets/fsvod/images/LaSOT/tiger/tiger-17_1_LaSOT/img: detected 52 images in 2.67s
+60 16858 7203
+[32m[10/23 21:23:56 detectron2]: [0m728: datasets/fsvod/images/LaSOT/tiger/tiger-14_0_LaSOT/img: detected 41 images in 5.08s
+90 16948 7238
+[32m[10/23 21:24:00 detectron2]: [0m729: datasets/fsvod/images/LaSOT/tiger/tiger-8_0_LaSOT/img: detected 53 images in 4.21s
+15 16963 7239
+[32m[10/23 21:24:00 detectron2]: [0m730: datasets/fsvod/images/LaSOT/tiger/tiger-1_0_LaSOT/img: detected 13 images in 0.47s
+64 17027 7244
+[32m[10/23 21:24:05 detectron2]: [0m731: datasets/fsvod/images/LaSOT/tiger/tiger-17_0_LaSOT/img: detected 52 images in 4.78s
+123 17150 7308
+[32m[10/23 21:24:16 detectron2]: [0m732: datasets/fsvod/images/LaSOT/tiger/tiger-9_0_LaSOT/img: detected 72 images in 11.21s
+175 17325 7386
+[32m[10/23 21:24:29 detectron2]: [0m733: datasets/fsvod/images/LaSOT/tiger/tiger-13_0_LaSOT/img: detected 119 images in 12.20s
+56 17381 7394
+[32m[10/23 21:24:30 detectron2]: [0m734: datasets/fsvod/images/LaSOT/tiger/tiger-5_0_LaSOT/img: detected 49 images in 1.55s
+44 17425 7399
+[32m[10/23 21:24:33 detectron2]: [0m735: datasets/fsvod/images/LaSOT/tiger/tiger-12_0_LaSOT/img: detected 35 images in 2.58s
+49 17474 7402
+[32m[10/23 21:24:36 detectron2]: [0m736: datasets/fsvod/images/LaSOT/crocodile/crocodile-14_0_LaSOT/img: detected 50 images in 2.94s
+114 17588 7461
+[32m[10/23 21:24:40 detectron2]: [0m737: datasets/fsvod/images/LaSOT/crocodile/crocodile-1_0_LaSOT/img: detected 67 images in 4.45s
+59 17647 7517
+[32m[10/23 21:24:51 detectron2]: [0m738: datasets/fsvod/images/LaSOT/crocodile/crocodile-15_0_LaSOT/img: detected 52 images in 10.72s
+87 17734 7574
+[32m[10/23 21:24:58 detectron2]: [0m739: datasets/fsvod/images/LaSOT/crocodile/crocodile-8_0_LaSOT/img: detected 47 images in 6.75s
+354 18088 7813
+[32m[10/23 21:25:20 detectron2]: [0m740: datasets/fsvod/images/LaSOT/crocodile/crocodile-3_0_LaSOT/img: detected 150 images in 22.25s
+80 18168 7844
+[32m[10/23 21:25:23 detectron2]: [0m741: datasets/fsvod/images/LaSOT/crocodile/crocodile-20_0_LaSOT/img: detected 51 images in 3.27s
+113 18281 7918
+[32m[10/23 21:25:30 detectron2]: [0m742: datasets/fsvod/images/LaSOT/crocodile/crocodile-16_0_LaSOT/img: detected 54 images in 6.47s
+149 18430 7967
+[32m[10/23 21:25:35 detectron2]: [0m743: datasets/fsvod/images/LaSOT/crocodile/crocodile-6_0_LaSOT/img: detected 100 images in 5.74s
+69 18499 7996
+[32m[10/23 21:25:37 detectron2]: [0m744: datasets/fsvod/images/LaSOT/crocodile/crocodile-12_0_LaSOT/img: detected 44 images in 1.85s
+79 18578 8015
+[32m[10/23 21:25:42 detectron2]: [0m745: datasets/fsvod/images/LaSOT/crocodile/crocodile-19_0_LaSOT/img: detected 66 images in 4.51s
+132 18710 8058
+[32m[10/23 21:25:44 detectron2]: [0m746: datasets/fsvod/images/LaSOT/crocodile/crocodile-5_0_LaSOT/img: detected 90 images in 2.62s
+178 18888 8212
+[32m[10/23 21:25:48 detectron2]: [0m747: datasets/fsvod/images/LaSOT/robot/robot-4_0_LaSOT/img: detected 129 images in 3.40s
+239 19127 8474
+[32m[10/23 21:26:08 detectron2]: [0m748: datasets/fsvod/images/LaSOT/robot/robot-6_0_LaSOT/img: detected 136 images in 20.81s
+73 19200 8499
+[32m[10/23 21:26:15 detectron2]: [0m749: datasets/fsvod/images/LaSOT/robot/robot-10_0_LaSOT/img: detected 91 images in 6.65s
+120 19320 8653
+[32m[10/23 21:26:21 detectron2]: [0m750: datasets/fsvod/images/LaSOT/robot/robot-7_0_LaSOT/img: detected 97 images in 6.10s
+90 19410 8708
+[32m[10/23 21:26:28 detectron2]: [0m751: datasets/fsvod/images/LaSOT/robot/robot-16_0_LaSOT/img: detected 67 images in 6.97s
+80 19490 8755
+[32m[10/23 21:26:40 detectron2]: [0m752: datasets/fsvod/images/LaSOT/robot/robot-8_0_LaSOT/img: detected 80 images in 11.37s
+14 19504 8766
+[32m[10/23 21:26:46 detectron2]: [0m753: datasets/fsvod/images/LaSOT/robot/robot-17_0_LaSOT/img: detected 84 images in 6.36s
+72 19576 8818
+[32m[10/23 21:26:54 detectron2]: [0m754: datasets/fsvod/images/LaSOT/robot/robot-9_0_LaSOT/img: detected 46 images in 8.15s
+131 19707 8868
+[32m[10/23 21:27:13 detectron2]: [0m755: datasets/fsvod/images/LaSOT/kangaroo/kangaroo-3_0_LaSOT/img: detected 83 images in 18.52s
+70 19777 8903
+[32m[10/23 21:27:16 detectron2]: [0m756: datasets/fsvod/images/LaSOT/kangaroo/kangaroo-17_0_LaSOT/img: detected 67 images in 2.98s
+112 19889 8965
+[32m[10/23 21:27:32 detectron2]: [0m757: datasets/fsvod/images/LaSOT/kangaroo/kangaroo-9_0_LaSOT/img: detected 66 images in 16.05s
+375 20264 9309
+[32m[10/23 21:27:43 detectron2]: [0m758: datasets/fsvod/images/LaSOT/kangaroo/kangaroo-15_0_LaSOT/img: detected 100 images in 11.03s
+126 20390 9361
+[32m[10/23 21:27:58 detectron2]: [0m759: datasets/fsvod/images/LaSOT/kangaroo/kangaroo-8_0_LaSOT/img: detected 52 images in 15.15s
+55 20445 9370
+[32m[10/23 21:28:00 detectron2]: [0m760: datasets/fsvod/images/LaSOT/kangaroo/kangaroo-14_0_LaSOT/img: detected 46 images in 2.28s
+146 20591 9469
+[32m[10/23 21:28:28 detectron2]: [0m761: datasets/fsvod/images/LaSOT/kangaroo/kangaroo-4_0_LaSOT/img: detected 76 images in 27.89s
+112 20703 9506
+[32m[10/23 21:28:37 detectron2]: [0m762: datasets/fsvod/images/LaSOT/kangaroo/kangaroo-11_0_LaSOT/img: detected 85 images in 9.01s
+134 20837 9597
+[32m[10/23 21:28:42 detectron2]: [0m763: datasets/fsvod/images/LaSOT/kangaroo/kangaroo-10_0_LaSOT/img: detected 94 images in 4.95s
+58 20895 9629
+[32m[10/23 21:28:46 detectron2]: [0m764: datasets/fsvod/images/LaSOT/kangaroo/kangaroo-13_1_LaSOT/img: detected 22 images in 4.36s
+99 20994 9721
+[32m[10/23 21:29:01 detectron2]: [0m765: datasets/fsvod/images/LaSOT/kangaroo/kangaroo-4_1_LaSOT/img: detected 36 images in 14.67s
+48 21042 9731
+[32m[10/23 21:29:04 detectron2]: [0m766: datasets/fsvod/images/LaSOT/kangaroo/kangaroo-6_0_LaSOT/img: detected 38 images in 3.02s
+114 21156 9806
+[32m[10/23 21:29:08 detectron2]: [0m767: datasets/fsvod/images/LaSOT/kangaroo/kangaroo-13_0_LaSOT/img: detected 55 images in 3.80s
+69 21225 9821
+[32m[10/23 21:29:11 detectron2]: [0m768: datasets/fsvod/images/LaSOT/squirrel/squirrel-3_0_LaSOT/img: detected 54 images in 3.60s
+64 21289 9881
+[32m[10/23 21:29:16 detectron2]: [0m769: datasets/fsvod/images/LaSOT/squirrel/squirrel-5_0_LaSOT/img: detected 42 images in 4.64s
+71 21360 9916
+[32m[10/23 21:29:18 detectron2]: [0m770: datasets/fsvod/images/LaSOT/squirrel/squirrel-18_0_LaSOT/img: detected 43 images in 2.46s
+{0: 7505, 1: 1584, 2: 838, 3: 402, 4: 190, 5: 167, 6: 79, 7: 133, 8: 138, 9: 52, 10: 36, 11: 22, 12: 33, 13: 18, 14: 37, 15: 15, 16: 5, 17: 20, 18: 15, 19: 15, 20: 6, 21: 3, 22: 3, 23: 5, 24: 7, 25: 11, 26: 5, 27: 2, 28: 5, 29: 9, 30: 3, 31: 1, 32: 1, 33: 4, 34: 14, 35: 1, 36: 2, 37: 0, 38: 8, 39: 2, 40: 5, 41: 5, 42: 0, 43: 0, 44: 0, 45: 1, 46: 3, 47: 0, 48: 0, 49: 1, 50: 2, 51: 0, 52: 0, 53: 0, 54: 0, 55: 7, 56: 0, 57: 0, 58: 0, 59: 2, 60: 0, 61: 0, 62: 0, 63: 0, 64: 0, 65: 0, 66: 0, 67: 0, 68: 0, 69: 0, 70: 0, 71: 0, 72: 0, 73: 0, 74: 0, 75: 0, 76: 0, 77: 0, 78: 0, 79: 0}
+{0: 0.657065312554719, 1: 0.13867974085098933, 2: 0.07336718613202592, 3: 0.035195237261425316, 4: 0.016634564874803012, 5: 0.014620907021537384, 6: 0.0069164769742602, 7: 0.011644195412362108, 8: 0.012081947119593766, 9: 0.004552617755209245, 10: 0.003151812292067939, 11: 0.0019261075118192962, 12: 0.002889161267728944, 13: 0.0015759061460339696, 14: 0.0032393626335142705, 15: 0.0013132551216949746, 16: 0.0004377517072316582, 17: 0.001751006828926633, 18: 0.0013132551216949746, 19: 0.0013132551216949746, 20: 0.0005253020486779899, 21: 0.00026265102433899493, 22: 0.00026265102433899493, 23: 0.0004377517072316582, 24: 0.0006128523901243215, 25: 0.0009630537559096481, 26: 0.0004377517072316582, 27: 0.0001751006828926633, 28: 0.0004377517072316582, 29: 0.0007879530730169848, 30: 0.00026265102433899493, 31: 8.755034144633164e-05, 32: 8.755034144633164e-05, 33: 0.0003502013657853266, 34: 0.001225704780248643, 35: 8.755034144633164e-05, 36: 0.0001751006828926633, 37: 0.0, 38: 0.0007004027315706532, 39: 0.0001751006828926633, 40: 0.0004377517072316582, 41: 0.0004377517072316582, 42: 0.0, 43: 0.0, 44: 0.0, 45: 8.755034144633164e-05, 46: 0.00026265102433899493, 47: 0.0, 48: 0.0, 49: 8.755034144633164e-05, 50: 0.0001751006828926633, 51: 0.0, 52: 0.0, 53: 0.0, 54: 0.0, 55: 0.0006128523901243215, 56: 0.0, 57: 0.0, 58: 0.0, 59: 0.0001751006828926633, 60: 0.0, 61: 0.0, 62: 0.0, 63: 0.0, 64: 0.0, 65: 0.0, 66: 0.0, 67: 0.0, 68: 0.0, 69: 0.0, 70: 0.0, 71: 0.0, 72: 0.0, 73: 0.0, 74: 0.0, 75: 0.0, 76: 0.0, 77: 0.0, 78: 0.0, 79: 0.0}
+Recall: 0.7601623311822234 11426 15031
+FG ratio 0.5163634590059991 10587 20503
