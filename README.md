@@ -24,7 +24,7 @@ sh all.sh
 ```
 
 
-## Citing FewX
+## Citing FSVOD
 If you use this toolbox in your research or wish to refer to the baseline results, please use the following BibTeX entries.
 
   ```
